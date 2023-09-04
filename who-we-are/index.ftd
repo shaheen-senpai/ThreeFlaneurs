@@ -1,0 +1,57 @@
+;;-- import: sarvom.github.io/poppins/assets as poppins-assets
+
+
+-- page:
+
+-- component page:
+
+-- ftd.column:
+width: fill-container
+height: 
+types: 
+colors: 
+background.solid: 
+
+-- ftd.column:
+width: fill-container
+height: 
+
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 61
+background.solid: #fff
+
+-- lib.navbar:
+
+-- end: ftd.column
+
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+;;height.fixed.calc: 100vh - 61px
+;;id: 1
+
+
+
+;; content here
+-- ftd.text: page 3
+align-self: center
+color: #000
+
+
+
+
+
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
