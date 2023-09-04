@@ -14,9 +14,6 @@ background.solid:
 -- ftd.column:
 width: fill-container
 height: 
-;;id: 1
-;;overflow-y: scroll
-
 
 
 -- ftd.column:
@@ -25,7 +22,6 @@ height.fixed.px: 61
 background.solid: #fff
 
 -- lib.navbar:
-
 -- end: ftd.column
 
 
@@ -34,6 +30,8 @@ background.solid: #fff
 width: fill-container
 ;;height.fixed.calc: 100vh - 61px
 ;;id: 1
+
+
 
 -- hero-1:
 
@@ -59,6 +57,33 @@ button: Meet Our Team
 url: /who-we-are
 
 -- end: ftd.row
+
+
+
+-- ftd.row:
+width: fill-container
+height.fixed.px: 500
+align-content: center   
+spacing: space-evenly
+
+-- blog-2: Newsletters, Lectures, Symposia
+name-1: OUT
+name-2: REACH
+
+-- blog-3: Member strong community
+name-1: 1500
+
+-- blog-2: Itineraries for a design curious audience
+name-1: 6 DESIGN
+name-2: TRIPS
+
+-- blog-3: Architecture Open events
+name-1: 51
+
+-- end: ftd.row
+
+
+
 
 -- end: ftd.column
 
@@ -163,6 +188,69 @@ link: $blog-1.url
 -- end: ftd.column
 
 -- end: blog-1
+
+
+
+
+
+
+
+
+
+-- component blog-2:
+string name-1:
+string name-2: 
+caption content:
+
+-- ftd.column:
+width.fixed.px: 230
+align-content: center   
+
+-- ftd.text: $blog-2.name-1
+role: $poppins-size-50-600
+color: #f1562a
+
+-- ftd.text: $blog-2.name-2
+role: $poppins-size-50-600
+color: #f1562a
+
+-- ftd.text: $blog-2.content
+text-align: center
+role: $poppins-size-20-700
+color: #000
+
+-- end: ftd.column
+
+-- end: blog-2
+
+
+
+
+
+
+
+
+
+-- component blog-3:
+string name-1:
+caption content:
+
+-- ftd.column:
+width.fixed.px: 230
+align-content: center   
+
+-- ftd.text: $blog-3.name-1
+role: $poppins-size-50-600
+color: #f1562a
+
+-- ftd.text: $blog-3.content
+role: $poppins-size-20-700
+color: #000
+text-align: center
+
+-- end: ftd.column
+
+-- end: blog-3
 
 
 
