@@ -1,14 +1,16 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
-favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
+-- fastn.package: shaheen-senpai.github.io/threeflaneurs
+favicon: /-/shaheen-senpai.github.io/threeflaneurs/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
+-- fastn.dependency: sarvom.github.io/poppins
 
--- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
+-- fastn.auto-import: shaheen-senpai.github.io/threeflaneurs/FASTN/ds
+-- fastn.auto-import: shaheen-senpai.github.io/threeflaneurs/assets
+-- fastn.auto-import: shaheen-senpai.github.io/threeflaneurs/lib
 -- fastn.auto-import: doc-site
 
 -- fastn.sitemap:
