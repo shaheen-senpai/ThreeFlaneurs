@@ -23,30 +23,30 @@ $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
 align-self: center
 padding-left.px: 120
 padding-right.px: 60
-link:
+link: index.html
 
 -- ftd.row:
 height: fill-container
 
 -- navbar-button: WHAT WE DO
-url: index
-bg-color: #e84a43
-
--- navbar-button: WHO WE ARE
-url: index
-bg-color: #b12a43
-
--- navbar-button: LATEST NEWS
-url: index
-bg-color: #c55a41
-
--- navbar-button: 3F JOURNAL
-url: index
+url: /what-we-do
 bg-color: #f1562a
 
+-- navbar-button: WHO WE ARE
+url: /who-we-are
+bg-color: #9bd22d
+
+-- navbar-button: LATEST NEWS
+url: /latest-news
+bg-color: #ffaa80
+
+-- navbar-button: 3F JOURNAL
+url: /3f-journal
+bg-color: #ff8c1a
+
 -- navbar-button: PUBLICATIONS
-url: index
-bg-color: #d2462a
+url: /publications
+bg-color: #ffff66
 
 -- end: ftd.row
 
@@ -90,7 +90,7 @@ background.solid: $navbar-button.bg-color
 -- ftd.text: $navbar-button.name
 role: $poppins-size-17-600
 color: #fff
-color if {navbar-button.hover}: #000
+color if {navbar-button.hover}: #8c8c8c
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-button.hover, v = false)
 padding-horizontal.px: 40

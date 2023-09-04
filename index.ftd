@@ -1,4 +1,4 @@
-;;-- import: sarvom.github.io/poppins/assets as poppins-assets
+-- import: sarvom.github.io/poppins/assets as poppins-assets
 
 -- page:
 
@@ -32,46 +32,33 @@ background.solid: #fff
 
 -- ftd.column:
 width: fill-container
-height.fixed.calc: 100vh - 61px
-id: 1
+;;height.fixed.calc: 100vh - 61px
+;;id: 1
 
--- ftd.column:
-width: fill-container
-height: fill-container
-background.image: $bg-img
-anchor.id: 1
-id: 2
-z-index: 85
+-- hero-1:
 
--- ftd.column:
-width: fill-container
-height: hug-content
-overflow-y: scroll
-anchor.id: 2
-z-index: 90
-
--- ftd.text: Hello 
-height.fixed.px: 400
-role: 
-color: #fff123
-text-align: center
-
--- ftd.text: Hello 
-height.fixed.px: 400
-role: 
-color: #fff123
-text-align: center
-
--- ftd.text: Hello 
+-- ftd.row:
 height.fixed.px: 500
-role: 
-color: #fff123
-text-align: center
+margin-top.px: 55
 
--- end: ftd.column
+-- blog-1: WHAT WE DO .....
+color: #f1562a
+content-1: We have hosted (open house format) public design events in several cities across UAE & India under our **Architecture Open** initiatives.
+content-2: And also conducted **Curated Design Tours** to various cities around the world so as to foster a better understanding of the state of architecture and design in our contemporary cities.
+button: Learn More
+url: /what-we-do
 
--- end: ftd.column
+-- ftd.image: $assets.files.assets.blog-1-img.webp
+height: fill-container
 
+-- blog-1: WHO WE ARE .....
+color: #9bd22d
+content-1: **ThreeFlaneurs** is a design collective that works at the intersection of Architecture & Travel.
+content-2: We strongly believe in the importance of learning design through experiencing it in person. Our main goal is to inspire people to travel with the objective of learning from well-designed environments.
+button: Meet Our Team
+url: /who-we-are
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -84,11 +71,114 @@ text-align: center
 
 
 
+
+
+
+
+
+
+
+-- component hero-1:
+
+-- ftd.column:
+width: fill-container
+height.fixed.calc: 100vh - 61px
+background.image: $bg-img
+-- ftd.column:
+width: hug-content
+height: hug-content
+margin-top.px: 100
+margin-left.px: 150
+spacing.fixed.px: 20
+
+-- ftd.text: THREEFLANEURS
+role: $poppins-size-20-700
+color: #f1562a
+background.solid: #f1562a
+
+-- ftd.text: THREEFLANEURS
+role: $poppins-size-120-700
+color: #fff
+
+-- ftd.text: WE  PRACTICE AT THE INTERSECTION OF ARCHITECTURE AND TRAVEL
+role: $poppins-size-20-700
+color: #fff
+background.solid: #b3ff66
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-1
+
+
+
+
+
+
+
+
+
+-- component blog-1:
+caption name:
+string color:
+string content-1:
+string content-2:
+string button:
+string url:
+
+-- ftd.column:
+height.fixed.px: 500
+width: fill-container
+spacing: space-evenly
+padding-horizontal.px: 100
+background.solid: $blog-1.color
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- ftd.text: $blog-1.name
+margin-right.px: 100
+role: $poppins-size-50-600
+color: #fff
+
+-- ftd.text: $blog-1.content-1
+role: $poppins-size-14-400
+color:
+
+-- ftd.text: $blog-1.content-2
+role: $poppins-size-14-400
+color:
+
+-- end: ftd.column
+
+-- ftd.text: $blog-1.button
+role:
+color: #fff
+padding.px: 10
+border-width.px: 1
+border-color: #fff
+link: $blog-1.url
+
+-- end: ftd.column
+
+-- end: blog-1
+
+
+
+
+
+
+
+
+
+
+
 -- ftd.background-image bg-img:
-src: $assets.files.assets.Background.png
+src: $assets.files.assets.home-background.webp
 repeat: no-repeat
 position: center-center
-;;size: auto
+size: cover
 
 
 
@@ -98,3 +188,74 @@ position: center-center
 
 
 
+-- ftd.type poppins-size-120-700-desktop:
+size.px: 120
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-120-700-mobile:
+size.px: 120
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-120-700:
+desktop: $poppins-size-120-700-desktop
+mobile: $poppins-size-120-700-mobile
+
+
+
+
+
+-- ftd.type poppins-size-20-700-desktop:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-20-700-mobile:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-20-700:
+desktop: $poppins-size-20-700-desktop
+mobile: $poppins-size-20-700-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-50-600-desktop:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-50-600-mobile:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-50-600:
+desktop: $poppins-size-50-600-desktop
+mobile: $poppins-size-50-600-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-14-400-desktop:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-14-400-mobile:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-14-400:
+desktop: $poppins-size-14-400-desktop
+mobile: $poppins-size-14-400-mobile
