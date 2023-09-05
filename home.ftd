@@ -243,6 +243,86 @@ text-align: center
 
 
 
+-- component hero-news:
+boolean $hover: false
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 600
+background.solid: #fff
+padding-horizontal.px: 200
+margin-top.px: 50
+spacing: space-evenly
+
+-- ftd.text: LATEST NEWS
+role: $poppins-size-50-600
+color:
+
+-- ftd.row:
+width: fill-container
+
+
+
+
+;; blog component to be made
+
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 300
+background.solid: #fff123
+
+-- ftd.text: hello world
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 300
+background.solid: #bff123
+
+-- ftd.text: hello world
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 300
+background.solid: #d8b123
+
+-- ftd.text: hello world
+
+-- end: ftd.column
+
+
+
+
+
+
+
+-- end: ftd.row
+
+
+-- ftd.text: View More
+role:
+color: #000
+padding.px: 10
+padding-horizontal.px: 15
+border-width.px: 1
+border-color: #000
+color if {hero-news.hover}: #fff
+background.solid if {hero-news.hover}: #000
+$on-mouse-enter$: $ftd.set-bool($a = $hero-news.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-news.hover, v = false)
+link: /latest-news
+
+
+-- end: ftd.column
+
+-- end: hero-news
 
 
 
@@ -252,8 +332,48 @@ text-align: center
 
 
 
+-- component email-subscribe:
+boolean $hover: false
 
+-- ftd.row:
+width: fill-container
+height.fixed.px: 76
+align-content: center
 
+-- ftd.text-input:
+placeholder: Enter your email here
+padding-vertical.px: 8
+padding-horizontal.px: 16
+width.fixed.px: 780
+height: fill-container
+border-width.px: 1
+border-color: #f1562a
+type: text
+role: $poppins-size-14-400
+background.solid: #000
+color: #f1562a
+
+-- ftd.row:
+height: fill-container
+align-content: center
+border-width.px: 1
+border-color: #000
+background.solid if {email-subscribe.hover}: #ff8c1a
+$on-mouse-enter$: $ftd.set-bool($a = $email-subscribe.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $email-subscribe.hover, v = false)
+
+-- ftd.text: SUBSCRIBE
+role: $poppins-size-14-400
+color: #000
+padding-horizontal.px: 50
+color if {email-subscribe.hover}: #fff
+link: /latest-news
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: email-subscribe
 
 
 
