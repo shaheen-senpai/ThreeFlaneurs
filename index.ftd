@@ -160,54 +160,33 @@ color: #fff
 
 
 
+;; next component
 
 
+
+-- ftd.row:
+width: fill-container
+height.fixed.calc: 100vh - 61px
+background.solid: #fff
+
+-- home.contact-1:
+
+-- home.contact-2:
+
+-- end: ftd.row
+
+
+
+;; end of page
 
 
 -- end: ftd.column
-
 
 -- end: ftd.column
 
 -- end: ftd.column
 
 -- end: page
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -250,7 +229,6 @@ mobile: $poppins-size-30-600-mobile
 
 
 
-
 -- ftd.type poppins-size-70-700-desktop:
 size.px: 70
 weight: 700
@@ -264,10 +242,3 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-70-700:
 desktop: $poppins-size-70-700-desktop
 mobile: $poppins-size-70-700-mobile
-
-
-
-
-
-
-

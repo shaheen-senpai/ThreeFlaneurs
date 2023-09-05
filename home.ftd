@@ -8,6 +8,8 @@
 width: fill-container
 height.fixed.calc: 100vh - 61px
 background.image: $bg-img
+id: hero-1
+
 -- ftd.column:
 width: hug-content
 height: hug-content
@@ -386,6 +388,267 @@ link: /latest-news
 
 
 
+-- component contact-1:
+boolean $hover-name: false
+boolean $hover-email: false
+boolean $hover-subject: false
+boolean $hover-text: false
+boolean $hover-submit: false
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-horizontal.px: 132
+spacing: space-evenly
+
+
+
+-- ftd.column:
+width: fill-container
+padding-right.px: 120
+spacing.fixed.px: 20
+
+-- ftd.text: Contact Us
+role: $poppins-size-30-600
+color:
+
+-- ftd.text: Drop us an email or use the query form below to know more about us; our Design Trips; the Architecture Open initiatives or just to say Hi.
+role: $poppins-size-14-400	
+color:
+margin-bottom.px: 40
+
+-- ftd.text-input:
+placeholder: Name
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-name}: #f1562a
+border-color: #000
+type: text
+role: $poppins-size-14-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-name, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-name, v = false)
+color: #f1562a
+
+-- ftd.text-input:
+placeholder: Email
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-email}: #f1562a
+border-color: #000
+type: text
+role: $poppins-size-14-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-email, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-email, v = false)
+color: #f1562a
+
+-- ftd.text-input:
+placeholder: Subject
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-subject}: #f1562a
+border-color: #000
+type: text
+role: $poppins-size-14-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-subject, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-subject, v = false)
+color: #f1562a
+
+-- end: ftd.column
+
+
+-- ftd.text-input:
+width: fill-container
+height.fixed.px: 110
+placeholder: Add text here
+multiline: true
+margin-top.px: 30
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-text}: #f1562a
+border-color: #000
+type: text
+role: $poppins-size-14-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-text, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-text, v = false)
+color: #f1562a
+
+-- ftd.text: SUBMIT
+role: $poppins-size-16-400	
+color: #000
+margin-top.px: 30
+align-self: end
+margin-right.px: 120
+color if {contact-1.hover-submit}: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-submit, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-submit, v = false)
+
+-- end: ftd.column
+
+-- end: contact-1
+
+
+
+
+
+
+
+
+
+
+
+-- component contact-2:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-horizontal.px: 132
+spacing: space-evenly
+
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+margin-top.px: 30
+
+-- pair:
+line-1: ADDRESS
+line-2: Dubai | Mumbai
+
+-- pair:
+line-1: WHATSAPP
+line-2: +91 9867677058
+
+-- pair:
+line-1: EMAIL
+line-2: info@threeflaneurs.com
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+spacing.fixed.px: 20
+margin-top.px: 100
+
+-- socials:
+logo: $assets.files.assets.facebook.webp
+text: Facebook
+
+-- socials:
+logo: $assets.files.assets.insta.webp
+text: Instagram
+
+-- socials:
+logo: $assets.files.assets.vimeo.webp
+text: Vimeo
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+margin-top.px: 180
+
+-- ftd.text: © 2023 Three Flaneurs
+
+-- ftd.text: <u> Back to Top </u>
+role:
+color: #000
+link: index.html#hero-1
+
+-- end: ftd.row
+
+
+
+-- end: ftd.column
+
+-- end: contact-2
+
+
+
+
+
+
+
+
+
+
+
+
+-- component pair:
+string line-1:
+string line-2:
+
+-- ftd.column:
+spacing.fixed.px: 20
+
+-- ftd.text: $pair.line-1
+role: $poppins-size-16-400
+
+-- ftd.text: $pair.line-2
+role: $poppins-size-14-400
+color: #000
+
+-- end: ftd.column
+
+-- end: pair
+
+
+
+
+
+
+
+
+
+-- component socials:
+ftd.image-src logo: 
+string text: 
+boolean $hover: false
+
+-- ftd.column:
+width.fixed.px: 110
+height.fixed.px: 110
+border-width.px: 1
+border-color: #000
+align-content: center
+link: https://www.facebook.com/threeflaneurs
+
+-- ftd.image:
+src: $socials.logo
+
+-- ftd.text: $socials.text
+margin-top.px: 10
+color: #000
+color if { socials.hover }: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $socials.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $socials.hover, v = false)
+
+
+-- end: ftd.column
+
+-- end: socials
+
+
+
+
+
+
+
+
 
 
 
@@ -500,3 +763,41 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-34-600:
 desktop: $poppins-size-34-600-desktop
 mobile: $poppins-size-34-600-mobile
+
+
+
+
+
+
+-- ftd.type poppins-size-30-600-desktop:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-30-600-mobile:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-30-600:
+desktop: $poppins-size-30-600-desktop
+mobile: $poppins-size-30-600-mobile
+
+
+
+
+
+-- ftd.type poppins-size-16-400-desktop:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-16-400-mobile:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-16-400:
+desktop: $poppins-size-16-400-desktop
+mobile: $poppins-size-16-400-mobile
+
