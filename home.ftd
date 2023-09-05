@@ -1,0 +1,382 @@
+-- import: sarvom.github.io/poppins/assets as poppins-assets
+
+
+
+-- component hero-1:
+
+-- ftd.column:
+width: fill-container
+height.fixed.calc: 100vh - 61px
+background.image: $bg-img
+-- ftd.column:
+width: hug-content
+height: hug-content
+margin-top.px: 100
+margin-left.px: 150
+spacing.fixed.px: 20
+
+-- ftd.text: THREEFLANEURS
+role: $poppins-size-20-700
+color: #f1562a
+background.solid: #f1562a
+
+-- ftd.text: THREEFLANEURS
+role: $poppins-size-120-700
+color: #fff
+
+-- ftd.text: WE  PRACTICE AT THE INTERSECTION OF ARCHITECTURE AND TRAVEL
+role: $poppins-size-20-700
+color: #fff
+background.solid: #b3ff66
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-1
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-1:
+caption name:
+string color:
+optional string color-content: #000
+optional integer box-height: 500
+optional integer content-padding: 100
+optional integer heading-margin: 0
+string content-1:
+string content-2:
+string button:
+string url:
+boolean $hover: false
+
+-- ftd.column:
+max-height.fixed.px: $blog-1.box-height
+height: fill-container
+width: fill-container
+spacing: space-evenly
+padding-horizontal.px: $blog-1.content-padding
+background.solid: $blog-1.color
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- ftd.text: $blog-1.name
+margin-right.px: $blog-1.heading-margin
+role: $poppins-size-50-600
+color: #fff
+
+-- ftd.text: $blog-1.content-1
+role: $poppins-size-14-400
+color: $blog-1.color-content
+
+-- ftd.text: $blog-1.content-2
+role: $poppins-size-14-400
+color: $blog-1.color-content
+
+-- end: ftd.column
+
+-- ftd.text: $blog-1.button
+role:
+color: #fff
+padding.px: 10
+border-width.px: 1
+border-color: #fff
+color if {blog-1.hover}: #000
+background.solid if {blog-1.hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $blog-1.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $blog-1.hover, v = false)
+link: $blog-1.url
+
+-- end: ftd.column
+
+-- end: blog-1
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-1-1:
+caption name:
+string color:
+optional integer box-height: 500
+optional integer content-width:
+optional integer heading-margin: 0
+string content-1:
+string button:
+string url:
+boolean $hover: false
+
+-- ftd.column:
+max-height.fixed.px: $blog-1-1.box-height
+height: fill-container
+width: fill-container
+spacing: space-evenly
+padding-horizontal.px: 50
+background.solid: $blog-1-1.color
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- ftd.text: $blog-1-1.name
+margin-right.px: $blog-1-1.heading-margin
+role: $poppins-size-34-600
+color: #fff
+
+-- ftd.text: $blog-1-1.content-1
+role: $poppins-size-14-400
+color: #fff
+
+-- end: ftd.column
+
+-- ftd.text: $blog-1-1.button
+role:
+color: #fff
+padding.px: 10
+padding-horizontal.px: 30
+border-width.px: 1
+border-color: #fff
+color if {blog-1-1.hover}: #000
+background.solid if {blog-1-1.hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $blog-1-1.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $blog-1-1.hover, v = false)
+link: $blog-1-1.url
+
+-- end: ftd.column
+
+-- end: blog-1-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-2:
+string name-1:
+string name-2: 
+caption content:
+
+-- ftd.column:
+width.fixed.px: 230
+align-content: center   
+
+-- ftd.text: $blog-2.name-1
+role: $poppins-size-50-600
+color: #f1562a
+
+-- ftd.text: $blog-2.name-2
+role: $poppins-size-50-600
+color: #f1562a
+
+-- ftd.text: $blog-2.content
+text-align: center
+role: $poppins-size-20-700
+color: #000
+
+-- end: ftd.column
+
+-- end: blog-2
+
+
+
+
+
+
+
+
+
+-- component blog-3:
+string name-1:
+caption content:
+
+-- ftd.column:
+width.fixed.px: 230
+align-content: center   
+
+-- ftd.text: $blog-3.name-1
+role: $poppins-size-50-600
+color: #f1562a
+
+-- ftd.text: $blog-3.content
+role: $poppins-size-20-700
+color: #000
+text-align: center
+
+-- end: ftd.column
+
+-- end: blog-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.background-image bg-img:
+src: $assets.files.assets.home-background.webp
+repeat: no-repeat
+position: center-center
+size: cover
+
+
+
+
+
+-- ftd.type poppins-size-120-700-desktop:
+size.px: 120
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-120-700-mobile:
+size.px: 120
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-120-700:
+desktop: $poppins-size-120-700-desktop
+mobile: $poppins-size-120-700-mobile
+
+
+
+
+
+-- ftd.type poppins-size-20-700-desktop:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-20-700-mobile:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-20-700:
+desktop: $poppins-size-20-700-desktop
+mobile: $poppins-size-20-700-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-50-600-desktop:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-50-600-mobile:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-50-600:
+desktop: $poppins-size-50-600-desktop
+mobile: $poppins-size-50-600-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-14-400-desktop:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-14-400-mobile:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-14-400:
+desktop: $poppins-size-14-400-desktop
+mobile: $poppins-size-14-400-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-34-600-desktop:
+size.px: 34
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-34-600-mobile:
+size.px: 34
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-34-600:
+desktop: $poppins-size-34-600-desktop
+mobile: $poppins-size-34-600-mobile
