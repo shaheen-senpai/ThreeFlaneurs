@@ -130,27 +130,33 @@ url: /publications
 -- end: ftd.row
 
 
+;; next component
+
+
+-- home.hero-news:
+
 
 ;; next component
 
 
+-- ftd.column:
+width: fill-container
+height.fixed.px: 320
+align-content: top-center
+background.solid: #ffaa80
 
-;; -- ftd.column:
+-- ftd.text: JOIN THE FLANEURS
+role: $poppins-size-70-700
+color: #fff
+margin-top.px: 50
 
+-- ftd.text:  Get the Latest News & Updates
+role: $poppins-size-30-600
+color: #fff
 
+-- end: ftd.column
 
-
-
-
-;; --end: ftd.column:
-
-
-
-
-
-
-
-
+-- home.email-subscribe:
 
 
 
@@ -221,57 +227,23 @@ url: /publications
 
 
 
--- ftd.type poppins-size-120-700-desktop:
-size.px: 120
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-120-700-mobile:
-size.px: 120
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-120-700:
-desktop: $poppins-size-120-700-desktop
-mobile: $poppins-size-120-700-mobile
 
 
 
 
-
--- ftd.type poppins-size-20-700-desktop:
-size.px: 20
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-20-700-mobile:
-size.px: 20
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-20-700:
-desktop: $poppins-size-20-700-desktop
-mobile: $poppins-size-20-700-mobile
-
-
-
-
-
-
-
--- ftd.type poppins-size-50-600-desktop:
-size.px: 50
+-- ftd.type poppins-size-30-600-desktop:
+size.px: 30
 weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
--- ftd.type poppins-size-50-600-mobile:
-size.px: 50
+-- ftd.type poppins-size-30-600-mobile:
+size.px: 30
 weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
--- ftd.responsive-type poppins-size-50-600:
-desktop: $poppins-size-50-600-desktop
-mobile: $poppins-size-50-600-mobile
+-- ftd.responsive-type poppins-size-30-600:
+desktop: $poppins-size-30-600-desktop
+mobile: $poppins-size-30-600-mobile
 
 
 
@@ -279,16 +251,23 @@ mobile: $poppins-size-50-600-mobile
 
 
 
--- ftd.type poppins-size-14-400-desktop:
-size.px: 14
-weight: 400
+-- ftd.type poppins-size-70-700-desktop:
+size.px: 70
+weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
--- ftd.type poppins-size-14-400-mobile:
-size.px: 14
-weight: 400
+-- ftd.type poppins-size-70-700-mobile:
+size.px: 70
+weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
--- ftd.responsive-type poppins-size-14-400:
-desktop: $poppins-size-14-400-desktop
-mobile: $poppins-size-14-400-mobile
+-- ftd.responsive-type poppins-size-70-700:
+desktop: $poppins-size-70-700-desktop
+mobile: $poppins-size-70-700-mobile
+
+
+
+
+
+
+
