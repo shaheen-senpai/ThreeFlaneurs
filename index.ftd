@@ -1,4 +1,5 @@
 -- import: sarvom.github.io/poppins/assets as poppins-assets
+-- import: shaheen-senpai.github.io/threeflaneurs/home
 
 -- page:
 
@@ -28,19 +29,22 @@ background.solid: #fff
 
 -- ftd.column:
 width: fill-container
-;;height.fixed.calc: 100vh - 61px
-;;id: 1
+;;body below navbar
 
 
+-- home.hero-1:
 
--- hero-1:
+
+;; next component
+
 
 -- ftd.row:
 height.fixed.px: 500
 margin-top.px: 55
 
--- blog-1: WHAT WE DO .....
+-- home.blog-1: WHAT WE DO .....
 color: #f1562a
+heading-margin: 100
 content-1: We have hosted (open house format) public design events in several cities across UAE & India under our **Architecture Open** initiatives.
 content-2: And also conducted **Curated Design Tours** to various cities around the world so as to foster a better understanding of the state of architecture and design in our contemporary cities.
 button: Learn More
@@ -49,8 +53,9 @@ url: /what-we-do
 -- ftd.image: $assets.files.assets.blog-1-img.webp
 height: fill-container
 
--- blog-1: WHO WE ARE .....
+-- home.blog-1: WHO WE ARE .....
 color: #9bd22d
+heading-margin: 100
 content-1: **ThreeFlaneurs** is a design collective that works at the intersection of Architecture & Travel.
 content-2: We strongly believe in the importance of learning design through experiencing it in person. Our main goal is to inspire people to travel with the objective of learning from well-designed environments.
 button: Meet Our Team
@@ -59,6 +64,8 @@ url: /who-we-are
 -- end: ftd.row
 
 
+;; next component
+
 
 -- ftd.row:
 width: fill-container
@@ -66,21 +73,87 @@ height.fixed.px: 500
 align-content: center   
 spacing: space-evenly
 
--- blog-2: Newsletters, Lectures, Symposia
+-- home.blog-2: Newsletters, Lectures, Symposia
 name-1: OUT
 name-2: REACH
 
--- blog-3: Member strong community
+-- home.blog-3: Member strong community
 name-1: 1500
 
--- blog-2: Itineraries for a design curious audience
+-- home.blog-2: Itineraries for a design curious audience
 name-1: 6 DESIGN
 name-2: TRIPS
 
--- blog-3: Architecture Open events
+-- home.blog-3: Architecture Open events
 name-1: 51
 
 -- end: ftd.row
+
+
+;; next component
+
+
+-- ftd.row:
+width: fill-container
+;;height: hug-content
+background.solid: #fff123
+
+-- ftd.image: $assets.files.assets.blog-4-img.webp
+width.fixed.px: 600
+
+-- ftd.column:
+height: fill-container
+
+-- home.blog-1: **READ OUR JOURNAL**
+color: #ff8c1a
+color-content: #fff
+content-padding: 150
+content-1: Read about our recent trips around the world 
+content-2: in search of inspiring places, projects and stories here.
+button: Read Now
+url: /3f-journal
+
+-- ftd.row:
+
+-- home.blog-1-1: PUBLICATIONS
+color: #ffff66
+content-1: Here's a selection of our articles that were featured in various publications.
+button: View
+url: /publications
+
+-- ftd.image: $assets.files.assets.blog-5-img.webp
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+
+;; next component
+
+
+
+;; -- ftd.column:
+
+
+
+
+
+
+;; --end: ftd.column:
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,38 +176,13 @@ name-1: 51
 
 
 
--- component hero-1:
 
--- ftd.column:
-width: fill-container
-height.fixed.calc: 100vh - 61px
-background.image: $bg-img
--- ftd.column:
-width: hug-content
-height: hug-content
-margin-top.px: 100
-margin-left.px: 150
-spacing.fixed.px: 20
 
--- ftd.text: THREEFLANEURS
-role: $poppins-size-20-700
-color: #f1562a
-background.solid: #f1562a
 
--- ftd.text: THREEFLANEURS
-role: $poppins-size-120-700
-color: #fff
 
--- ftd.text: WE  PRACTICE AT THE INTERSECTION OF ARCHITECTURE AND TRAVEL
-role: $poppins-size-20-700
-color: #fff
-background.solid: #b3ff66
 
--- end: ftd.column
 
--- end: ftd.column
 
--- end: hero-1
 
 
 
@@ -144,50 +192,15 @@ background.solid: #b3ff66
 
 
 
--- component blog-1:
-caption name:
-string color:
-string content-1:
-string content-2:
-string button:
-string url:
 
--- ftd.column:
-height.fixed.px: 500
-width: fill-container
-spacing: space-evenly
-padding-horizontal.px: 100
-background.solid: $blog-1.color
 
--- ftd.column:
-spacing.fixed.px: 10
 
--- ftd.text: $blog-1.name
-margin-right.px: 100
-role: $poppins-size-50-600
-color: #fff
 
--- ftd.text: $blog-1.content-1
-role: $poppins-size-14-400
-color:
 
--- ftd.text: $blog-1.content-2
-role: $poppins-size-14-400
-color:
 
--- end: ftd.column
 
--- ftd.text: $blog-1.button
-role:
-color: #fff
-padding.px: 10
-border-width.px: 1
-border-color: #fff
-link: $blog-1.url
 
--- end: ftd.column
 
--- end: blog-1
 
 
 
@@ -197,76 +210,8 @@ link: $blog-1.url
 
 
 
--- component blog-2:
-string name-1:
-string name-2: 
-caption content:
 
--- ftd.column:
-width.fixed.px: 230
-align-content: center   
 
--- ftd.text: $blog-2.name-1
-role: $poppins-size-50-600
-color: #f1562a
-
--- ftd.text: $blog-2.name-2
-role: $poppins-size-50-600
-color: #f1562a
-
--- ftd.text: $blog-2.content
-text-align: center
-role: $poppins-size-20-700
-color: #000
-
--- end: ftd.column
-
--- end: blog-2
-
-
-
-
-
-
-
-
-
--- component blog-3:
-string name-1:
-caption content:
-
--- ftd.column:
-width.fixed.px: 230
-align-content: center   
-
--- ftd.text: $blog-3.name-1
-role: $poppins-size-50-600
-color: #f1562a
-
--- ftd.text: $blog-3.content
-role: $poppins-size-20-700
-color: #000
-text-align: center
-
--- end: ftd.column
-
--- end: blog-3
-
-
-
-
-
-
-
-
-
-
-
--- ftd.background-image bg-img:
-src: $assets.files.assets.home-background.webp
-repeat: no-repeat
-position: center-center
-size: cover
 
 
 
