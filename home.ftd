@@ -87,7 +87,7 @@ color: $blog-1.color-content
 -- end: ftd.column
 
 -- ftd.text: $blog-1.button
-role:
+role: $poppins-size-14-400
 color: #fff
 padding.px: 10
 border-width.px: 1
@@ -146,7 +146,7 @@ color: #fff
 -- end: ftd.column
 
 -- ftd.text: $blog-1-1.button
-role:
+role: $poppins-size-14-400
 color: #fff
 padding.px: 10
 padding-horizontal.px: 30
@@ -280,7 +280,7 @@ cover: $assets.files.assets.news-blog-3.webp
 
 
 -- ftd.text: View More
-role:
+role: $poppins-size-14-400
 color: #000
 padding.px: 10
 padding-horizontal.px: 15
@@ -477,6 +477,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-submit, v = false)
 
 
 -- component contact-2:
+string to-top: index.html#hero-1
 
 -- ftd.column:
 width: fill-container
@@ -513,14 +514,17 @@ margin-top.px: 100
 -- socials:
 logo: $assets.files.assets.facebook.webp
 text: Facebook
+url: https://www.facebook.com/threeflaneurs
 
 -- socials:
 logo: $assets.files.assets.insta.webp
 text: Instagram
+url: https://www.instagram.com/threeflaneurs/
 
 -- socials:
 logo: $assets.files.assets.vimeo.webp
 text: Vimeo
+url: https://vimeo.com/channels/1610555
 
 -- end: ftd.row
 
@@ -536,7 +540,7 @@ margin-top.px: 180
 -- ftd.text: <u> Back to Top </u>
 role:
 color: #000
-link: index.html#hero-1
+link: $contact-2.to-top
 
 -- end: ftd.row
 
@@ -587,6 +591,7 @@ color: #000
 ftd.image-src logo: 
 string text: 
 boolean $hover: false
+string url:
 
 -- ftd.column:
 width.fixed.px: 110
@@ -594,7 +599,7 @@ height.fixed.px: 110
 border-width.px: 1
 border-color: #000
 align-content: center
-link: https://www.facebook.com/threeflaneurs
+link: $socials.url
 
 -- ftd.image:
 src: $socials.logo

@@ -172,6 +172,7 @@ background.solid: #fff
 -- home.contact-1:
 
 -- home.contact-2:
+to-top: index.html#hero-1
 
 -- end: ftd.row
 

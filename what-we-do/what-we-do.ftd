@@ -105,17 +105,64 @@ anchor.id: wwd-heading
 
 
 -- component blog:
-
+ftd.image-src bg-img:
+caption head:
+string heading-color:
+string body:
+string button-text:
+string button-link:
+boolean $hover: false
 
 
 -- ftd.column:
+width.fixed.px: 510
+height.fixed.px: 620
+id: wwd-blog
 
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $blog.bg-img
 
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-horizontal.px: 55
+anchor.id: wwd-blog
 
+-- ftd.text: $blog.head
+role: $poppins-size-45-700  
+color:  $blog.heading-color
+margin-top.px: 260
+
+-- ftd.text: $blog.body
+role: $poppins-size-14-400
+color: #fff
+margin-top.px: 20
+
+-- ftd.text: $blog.button-text
+role: $poppins-size-14-400
+color: #fff
+margin-top.px: 25
+padding.px: 10
+padding-horizontal.px: 15
+border-width.px: 1
+border-color: #fff
+border-color if {blog.hover}: #000
+color if {blog.hover}: #fff
+background.solid if {blog.hover}: #000
+$on-mouse-enter$: $ftd.set-bool($a = $blog.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $blog.hover, v = false)
+link: $blog.button-link
+
+-- end: ftd.column
 
 -- end: ftd.column
 
 -- end: blog
+
+
+
 
 
 
@@ -299,3 +346,25 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-55-700:
 desktop: $poppins-size-55-700-desktop
 mobile: $poppins-size-55-700-mobile
+
+
+
+
+
+
+
+
+
+-- ftd.type poppins-size-45-700-desktop:
+size.px: 45
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-45-700-mobile:
+size.px: 45
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-45-700:
+desktop: $poppins-size-45-700-desktop
+mobile: $poppins-size-45-700-mobile
