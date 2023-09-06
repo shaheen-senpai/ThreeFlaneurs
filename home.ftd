@@ -257,53 +257,24 @@ margin-top.px: 50
 spacing: space-evenly
 
 -- ftd.text: LATEST NEWS
-role: $poppins-size-50-600
+role: $poppins-size-55-700
 color:
+
 
 -- ftd.row:
 width: fill-container
-
-
-
+spacing: space-between
 
 ;; blog component to be made
 
+-- news-blog: Emirates Arch Open '20
+cover: $assets.files.assets.news-blog-1.webp
 
+-- news-blog: Webinar on Design Travel
+cover: $assets.files.assets.news-blog-2.webp
 
--- ftd.column:
-width: fill-container
-height.fixed.px: 300
-background.solid: #fff123
-
--- ftd.text: hello world
-
--- end: ftd.column
-
-
--- ftd.column:
-width: fill-container
-height.fixed.px: 300
-background.solid: #bff123
-
--- ftd.text: hello world
-
--- end: ftd.column
-
-
--- ftd.column:
-width: fill-container
-height.fixed.px: 300
-background.solid: #d8b123
-
--- ftd.text: hello world
-
--- end: ftd.column
-
-
-
-
-
-
+-- news-blog: Landscape Design, People and Places
+cover: $assets.files.assets.news-blog-3.webp
 
 -- end: ftd.row
 
@@ -650,6 +621,67 @@ $on-mouse-leave$: $ftd.set-bool($a = $socials.hover, v = false)
 
 
 
+-- component news-blog:
+ftd.image-src cover:
+caption caption:
+boolean $hover: false
+
+-- ftd.column:
+width.fixed.percent: 30
+spacing.fixed.px: 25
+border-width.px: 1
+border-color: #bfbfbf
+align-content: top-center
+
+
+-- ftd.image:
+src: $news-blog.cover
+width: fill-container
+
+-- ftd.text: $news-blog.caption
+role: $poppins-size-16-400
+color: #000
+color if { news-blog.hover }: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $news-blog.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $news-blog.hover, v = false)
+
+
+-- ftd.row:
+width.fixed.percent: 85
+padding-vertical.px: 15
+border-top-width.px: 1
+border-color: #bfbfbf
+
+-- ftd.text: hi
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: news-blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -799,3 +831,22 @@ font-family: $poppins-assets.fonts.Poppins
 desktop: $poppins-size-16-400-desktop
 mobile: $poppins-size-16-400-mobile
 
+
+
+
+
+
+
+-- ftd.type poppins-size-55-700-desktop:
+size.px: 55
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-55-700-mobile:
+size.px: 55
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-55-700:
+desktop: $poppins-size-55-700-desktop
+mobile: $poppins-size-55-700-mobile
