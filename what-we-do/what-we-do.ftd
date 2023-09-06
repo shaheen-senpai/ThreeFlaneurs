@@ -1,0 +1,301 @@
+-- import: sarvom.github.io/poppins/assets as poppins-assets
+
+
+-- component hero-1:
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+background.image: $bg-img
+id: wwd-hero
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+margin-top.px: 100
+margin-left.px: 120
+;;spacing.fixed.px: 20
+
+
+-- ftd.text: WHAT WE DO
+role: $poppins-size-20-700
+color: #f1562a
+background.solid: #f1562a
+
+
+-- ftd.text: WHAT
+role: $poppins-size-90-700
+color: #fff
+
+-- ftd.text: WE DO
+role: $poppins-size-90-700
+color: #f1562a
+margin-top.px: 120
+anchor.id: wwd-hero 
+
+
+-- ftd.text: At ThreeFlaneurs, we have been running programs at the intersection of architecture and travel across various verticals. In all our programs our participants get to engage with architecture and designers at different destinations:
+role: $poppins-size-14-400
+color: #fff   
+margin-top.px: 120
+margin-right.px: 950
+
+-- ftd.text: We have participated in the Kalaghoda Arts Festival Architecture and Urban Design Symposiums
+role: $poppins-size-14-400
+color: #fff   
+margin-top.px: 12
+margin-right.px: 950
+margin-bottom.px: 40
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-1
+
+
+
+
+
+
+
+
+
+
+-- component heading:
+optional integer margin-top: 0
+optional integer margin-bottom: 0
+optional integer margin-left: 0
+optional integer margin-right: 0
+optional integer height: 300
+optional string head:
+optional string sub:
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: $heading.height
+padding-top.px: $heading.margin-top
+padding-bottom.px: $heading.margin-bottom
+padding-left.px: $heading.margin-left
+padding-right.px: $heading.margin-right
+;; background.solid: #fff123
+
+-- ftd.text: $heading.head
+role: $poppins-size-55-700
+color: #000
+id: wwd-heading
+
+-- ftd.text: $heading.sub
+role: $poppins-size-55-700
+color: #000
+margin-top.px: 60
+anchor.id: wwd-heading
+
+-- end: ftd.column
+
+-- end: heading
+
+
+
+
+
+
+
+
+
+
+-- component blog:
+
+
+
+-- ftd.column:
+
+
+
+
+-- end: ftd.column
+
+-- end: blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.background-image bg-img:
+src: $assets.files.assets.wwd-background.webp
+repeat: no-repeat
+position: 
+size: contain
+
+
+
+
+
+-- ftd.type poppins-size-90-700-desktop:
+size.px: 90
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-90-700-mobile:
+size.px: 90
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-90-700:
+desktop: $poppins-size-90-700-desktop
+mobile: $poppins-size-90-700-mobile
+
+
+
+
+
+-- ftd.type poppins-size-20-700-desktop:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-20-700-mobile:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-20-700:
+desktop: $poppins-size-20-700-desktop
+mobile: $poppins-size-20-700-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-50-600-desktop:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-50-600-mobile:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-50-600:
+desktop: $poppins-size-50-600-desktop
+mobile: $poppins-size-50-600-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-14-400-desktop:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-14-400-mobile:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-14-400:
+desktop: $poppins-size-14-400-desktop
+mobile: $poppins-size-14-400-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-34-600-desktop:
+size.px: 34
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-34-600-mobile:
+size.px: 34
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-34-600:
+desktop: $poppins-size-34-600-desktop
+mobile: $poppins-size-34-600-mobile
+
+
+
+
+
+
+-- ftd.type poppins-size-30-600-desktop:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-30-600-mobile:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-30-600:
+desktop: $poppins-size-30-600-desktop
+mobile: $poppins-size-30-600-mobile
+
+
+
+
+
+-- ftd.type poppins-size-16-400-desktop:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-16-400-mobile:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-16-400:
+desktop: $poppins-size-16-400-desktop
+mobile: $poppins-size-16-400-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-55-700-desktop:
+size.px: 55
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-55-700-mobile:
+size.px: 55
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-55-700:
+desktop: $poppins-size-55-700-desktop
+mobile: $poppins-size-55-700-mobile
