@@ -625,6 +625,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $socials.hover, v = false)
 ftd.image-src cover:
 caption caption:
 boolean $hover: false
+boolean $click-heart: false
 
 -- ftd.column:
 width.fixed.percent: 30
@@ -651,8 +652,48 @@ width.fixed.percent: 85
 padding-vertical.px: 15
 border-top-width.px: 1
 border-color: #bfbfbf
+;; align-content: center
 
--- ftd.text: hi
+-- ftd.image: $assets.files.assets.eye.svg
+height.fixed.px: 25
+
+-- ftd.text: 1.2k
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 10
+align-self: center
+
+-- ftd.image: $assets.files.assets.comment.svg
+height.fixed.px: 25
+margin-left.px: 20
+
+-- ftd.text: 1.2k
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 10
+align-self: center
+
+-- ftd.text: 12
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 110
+align-self: center
+
+-- ftd.image: $assets.files.assets.heart-empty.svg
+if: { !news-blog.click-heart }
+height.fixed.px: 20
+align-self: center
+margin-left.px: 5
+$on-click$: $ftd.set-bool($a = $news-blog.click-heart, v = true)
+
+-- ftd.image: $assets.files.assets.heart-full.svg
+if: { news-blog.click-heart }
+height.fixed.px: 20
+align-self: center
+margin-left.px: 5
+$on-click$: $ftd.set-bool($a = $news-blog.click-heart, v = false)
+
+
 
 -- end: ftd.row
 
