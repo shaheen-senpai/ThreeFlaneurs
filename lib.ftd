@@ -161,7 +161,63 @@ link: index.html#contact-1
 
 
 
+-- component navbar-dropdown:
 
+
+-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+
+-- ftd.column:
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+-- ftd.text: WHAT WE DO
+role: $poppins-size-17-600
+color: #000
+link: /what-we-do
+
+-- ftd.text: WHO WE ARE
+role: $poppins-size-17-600
+color: #000
+link: /who-we-are
+
+-- ftd.text: LATEST NEWS
+role: $poppins-size-17-600
+color: #000
+link: /latest-news
+
+-- ftd.text: 3F JOURNAL
+role: $poppins-size-17-600
+color: #000
+link: /3f-journal
+
+-- ftd.text: PUBLICATIONS
+role: $poppins-size-17-600
+color: #000
+link: /publications
+
+-- end: ftd.column
+
+
+-- ftd.image: $assets.files.assets.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 15
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+
+-- end: ftd.row
+
+-- end: navbar-dropdown
 
 
 

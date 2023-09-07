@@ -36,6 +36,8 @@ width: fill-container
 
 -- lib.navbar-mobile:
 
+-- lib.navbar-dropdown:
+
 -- end: ftd.column
 
 
