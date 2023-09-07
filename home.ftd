@@ -6,16 +6,18 @@
 
 -- ftd.column:
 width: fill-container
-height.fixed.calc: 100vh - 61px
+height.fixed.calc if { ftd.device == "desktop" }: 100vh - 61px
 background.image: $bg-img
 id: hero-1
 
 -- ftd.column:
 width: hug-content
 height: hug-content
-margin-top.px: 100
-margin-left.px: 150
-spacing.fixed.px: 20
+margin-top.px if { ftd.device == "desktop" }: 100
+margin-top.px if { ftd.device == "mobile" }: 15
+margin-left.px if { ftd.device == "desktop" }: 150
+margin-left.px if { ftd.device == "mobile" }: 15
+spacing.fixed.px if { ftd.device == "desktop" }: 20
 
 -- ftd.text: THREEFLANEURS
 role: $poppins-size-20-700
@@ -25,11 +27,39 @@ background.solid: #f1562a
 -- ftd.text: THREEFLANEURS
 role: $poppins-size-120-700
 color: #fff
+margin-bottom.px if { ftd.device == "mobile" }: 30
 
+-- ftd.desktop:
 -- ftd.text: WE  PRACTICE AT THE INTERSECTION OF ARCHITECTURE AND TRAVEL
 role: $poppins-size-20-700
 color: #fff
 background.solid: #b3ff66
+-- end: ftd.desktop
+
+-- ftd.mobile:
+-- ftd.text: WE  PRACTICE AT THE 
+role: $poppins-size-20-700
+color: #fff
+margin-bottom.px: 5
+background.solid: #b3ff66
+-- end: ftd.mobile
+
+-- ftd.mobile:
+-- ftd.text: INTERSECTION OF ARCHITECTURE 
+role: $poppins-size-20-700
+color: #fff
+margin-bottom.px: 5
+background.solid: #b3ff66
+-- end: ftd.mobile
+
+-- ftd.mobile:
+-- ftd.text: AND TRAVEL
+role: $poppins-size-20-700
+color: #fff
+margin-bottom.px: 10
+background.solid: #b3ff66
+-- end: ftd.mobile
+
 
 -- end: ftd.column
 
@@ -61,8 +91,8 @@ string url:
 boolean $hover: false
 
 -- ftd.column:
-max-height.fixed.px: $blog-1.box-height
-height: fill-container
+height.fixed.px: $blog-1.box-height
+;; height: fill-container
 width: fill-container
 spacing: space-evenly
 padding-horizontal.px: $blog-1.content-padding
@@ -250,22 +280,25 @@ boolean $hover: false
 
 -- ftd.column:
 width: fill-container
-height.fixed.px: 600
+height.fixed.px if { ftd.device == "desktop" }: 600
 background.solid: #fff
-padding-horizontal.px: 200
-margin-top.px: 50
+padding-horizontal.px if { ftd.device == "desktop" }: 200
+margin-top.px if { ftd.device == "desktop" }: 50
+margin-top.px if { ftd.device == "mobile" }: 25
 spacing: space-evenly
 
 -- ftd.text: LATEST NEWS
 role: $poppins-size-55-700
 color:
+align-self if { ftd.device == "mobile" }: center
 
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 width: fill-container
 spacing: space-between
 
-;; blog component to be made
+;; blog component to be inserted
 
 -- news-blog: Emirates Arch Open '20
 cover: $assets.files.assets.news-blog-1.webp
@@ -279,9 +312,30 @@ cover: $assets.files.assets.news-blog-3.webp
 -- end: ftd.row
 
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+padding-horizontal.px: 15
+spacing.fixed.px: 15
+
+-- news-blog: Emirates Arch Open '20
+cover: $assets.files.assets.news-blog-1.webp
+
+-- news-blog: Webinar on Design Travel
+cover: $assets.files.assets.news-blog-2.webp
+
+-- news-blog: Landscape Design, People and Places
+cover: $assets.files.assets.news-blog-3.webp
+
+-- end: ftd.column
+
+
 -- ftd.text: View More
 role: $poppins-size-14-400
 color: #000
+align-self if { ftd.device == "mobile" }: center
+margin-top.px if { ftd.device == "mobile" }: 15
+margin-bottom.px if { ftd.device == "mobile" }: 25
 padding.px: 10
 padding-horizontal.px: 15
 border-width.px: 1
@@ -312,6 +366,7 @@ boolean $hover: false
 width: fill-container
 height.fixed.px: 76
 align-content: center
+background.solid: #fff
 
 -- ftd.text-input:
 placeholder: Enter your email here
@@ -363,23 +418,26 @@ boolean $hover-email: false
 boolean $hover-subject: false
 boolean $hover-text: false
 boolean $hover-submit: false
+optional integer padding: 132
 
 -- ftd.column:
 width: fill-container
 height: fill-container
-padding-horizontal.px: 132
+padding-horizontal.px: $contact-1.padding
 spacing: space-evenly
 
 
 
 -- ftd.column:
 width: fill-container
-padding-right.px: 120
+padding-right.px if {ftd.device == "desktop"}: 120
 spacing.fixed.px: 20
+align-content if {ftd.device == "mobile"}: center
 
 -- ftd.text: Contact Us
 role: $poppins-size-30-600
 color:
+margin-top.px if {ftd.device == "mobile"}: 50
 
 -- ftd.text: Drop us an email or use the query form below to know more about us; our Design Trips; the Architecture Open initiatives or just to say Hi.
 role: $poppins-size-14-400	
@@ -478,15 +536,17 @@ $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-submit, v = false)
 
 -- component contact-2:
 string to-top: index.html#hero-1
+optional integer padding: 132
 
 -- ftd.column:
 width: fill-container
 height: fill-container
-padding-horizontal.px: 132
+padding-horizontal.px: $contact-2.padding
 spacing: space-evenly
 
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 width: fill-container
 spacing: space-between
 margin-top.px: 30
@@ -508,6 +568,7 @@ line-2: info@threeflaneurs.com
 
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 spacing.fixed.px: 20
 margin-top.px: 100
 
@@ -529,11 +590,61 @@ url: https://vimeo.com/channels/1610555
 -- end: ftd.row
 
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #fff
+align-content: center
+spacing.fixed.px: 20
+margin-top.px: 30
+
+-- pair:
+line-1: ADDRESS
+line-2: Dubai | Mumbai
+
+-- pair:
+line-1: WHATSAPP
+line-2: +91 9867677058
+
+-- pair:
+line-1: EMAIL
+line-2: info@threeflaneurs.com
+
+-- end: ftd.column
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #fff
+align-content: center
+spacing.fixed.px: 20
+margin-top.px: 30
+
+-- socials:
+logo: $assets.files.assets.facebook.webp
+text: Facebook
+url: https://www.facebook.com/threeflaneurs
+
+-- socials:
+logo: $assets.files.assets.insta.webp
+text: Instagram
+url: https://www.instagram.com/threeflaneurs/
+
+-- socials:
+logo: $assets.files.assets.vimeo.webp
+text: Vimeo
+url: https://vimeo.com/channels/1610555
+
+-- end: ftd.column
+
 
 -- ftd.row:
 width: fill-container
 spacing: space-between
-margin-top.px: 180
+margin-top.px if { ftd.device == "desktop" }: 180
+margin-top.px if { ftd.device == "mobile" }: 80
+margin-bottom.px if { ftd.device == "mobile" }: 30
 
 -- ftd.text: © 2023 Three Flaneurs
 
@@ -633,7 +744,8 @@ boolean $hover: false
 boolean $click-heart: false
 
 -- ftd.column:
-width.fixed.percent: 30
+width.fixed.percent if { ftd.device == "desktop" }: 30
+width if { ftd.device == "mobile" }: fill-container
 spacing.fixed.px: 25
 border-width.px: 1
 border-color: #bfbfbf
@@ -754,7 +866,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-120-700-mobile:
-size.px: 120
+size.px: 45
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
@@ -772,7 +884,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-20-700-mobile:
-size.px: 20
+size.px: 15
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
@@ -792,7 +904,7 @@ weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-50-600-mobile:
-size.px: 50
+size.px: 35
 weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
@@ -889,7 +1001,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-55-700-mobile:
-size.px: 55
+size.px: 35
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
