@@ -60,12 +60,114 @@ $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-contact, v = false)
 align-self: center
 padding-right.px: 120
 padding-left.px: 60
-link:
+link: index.html#contact-1
 
 
 -- end: ftd.row
 
 -- end: navbar
+
+
+
+
+
+
+
+
+
+-- boolean $menu-open: false
+
+
+-- component navbar-mobile:
+boolean $hover-home: false
+boolean $hover-contact: false
+
+-- ftd.column:
+width: fill-container
+background.solid: #fff
+align-content: center
+
+-- ftd.row:
+width: fill-container
+align-content: center
+id: navbar-mobile
+
+-- ftd.text: HOME
+role: $poppins-size-17-600
+color: #001
+padding.px: 20
+color if {navbar-mobile.hover-home}: #e84a43
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-mobile.hover-home, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-mobile.hover-home, v = false)
+align-self: center
+link: index.html
+
+-- ftd.image: $assets.files.assets.hamburger-menu.svg
+height.fixed.px: 30
+padding-left.percent: 80
+anchor.id: navbar-mobile
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
+
+-- end: ftd.row
+
+-- ftd.column:
+height: fill-container
+
+-- navbar-button: WHAT WE DO
+url: /what-we-do
+bg-color: #f1562a
+
+-- navbar-button: WHO WE ARE
+url: /who-we-are
+bg-color: #9bd22d
+
+-- navbar-button: LATEST NEWS
+url: /latest-news
+bg-color: #ffaa80
+
+-- navbar-button: 3F JOURNAL
+url: /3f-journal
+bg-color: #ff8c1a
+
+-- navbar-button: PUBLICATIONS
+url: /publications
+bg-color: #ffff66
+
+-- end: ftd.column
+
+
+-- ftd.text: CONTACT
+role: $poppins-size-17-600
+color: #000
+padding.px: 15
+color if {navbar-mobile.hover-contact}: #e84a43
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-mobile.hover-contact, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-mobile.hover-contact, v = false)
+align-self: center
+link: index.html#contact-1
+
+
+
+
+-- end: ftd.column
+
+-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,6 +185,7 @@ boolean $hover: false
 optional boolean $drop-down: false
 
 -- ftd.column:
+width if { ftd.device == "mobile" }: fill-container
 height: fill-container
 align-content: center
 background.solid: $navbar-button.bg-color
@@ -90,6 +193,7 @@ background.solid: $navbar-button.bg-color
 -- ftd.text: $navbar-button.name
 role: $poppins-size-17-600
 color: #fff
+padding-vertical.px if {ftd.device == "mobile"}: 10
 color if {navbar-button.hover}: #8c8c8c
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-button.hover, v = false)

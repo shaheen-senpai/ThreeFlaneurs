@@ -22,6 +22,7 @@ height:
 
 
 -- ftd.column:
+if: { ftd.device == "desktop" }
 width: fill-container
 height.fixed.px: 61
 background.solid: #fff
@@ -29,6 +30,16 @@ background.solid: #fff
 -- lib.navbar:
 -- end: ftd.column
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- lib.navbar-mobile:
+
+-- end: ftd.column
+
+
+;; navbar ends...............................................................................
 
 
 -- ftd.column:
