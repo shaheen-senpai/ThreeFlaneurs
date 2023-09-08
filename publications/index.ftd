@@ -53,10 +53,7 @@ height: auto
 
 
 
-
-
-
-
+-- pbs.hero-1:
 
 
 
@@ -64,16 +61,138 @@ height: auto
 
 
 
+-- ftd.column:
+width: fill-container
+padding-horizontal.px if { ftd.device == "desktop" }: 250
+padding-horizontal.px if { ftd.device == "mobile" }: 15
+padding-vertical.px: 80 
+spacing.fixed.px: 40
+
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+align-content: center
+spacing.fixed.px: 25
+
+
+-- ftd.column:
+align-content: center
+link:
+
+-- ftd.image:
+src: $assets.files.assets.pbs-1.png
+width.fixed.px: 250
+
+-- ftd.text: Integrating built form with nature
+role: $poppins-size-16-400
+
+-- end: ftd.column
+
+
+
+-- ftd.column:
+align-content: center
+link:
+
+-- ftd.image:
+src: $assets.files.assets.pbs-2.png
+width.fixed.px: 250
+
+-- ftd.text: Act of viewing
+role: $poppins-size-16-400
+margin-top.px: 30
+
+-- ftd.text: Domus India Magazine (Mar 2018)
+role: $poppins-size-14-400
+
+-- end: ftd.column
+
+
+
+-- ftd.column:
+align-content: center
+link:
+
+-- ftd.image:
+src: $assets.files.assets.pbs-3.png
+width.fixed.px: 250
+
+-- ftd.text: The city, through a different lens
+role: $poppins-size-16-400
+margin-top.px: 30
+
+-- end: ftd.column
+
+
+
+-- end: ftd.row
 
 
 
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: hug-content
+align-content: center
+spacing.fixed.px: 40
+
+-- ftd.column:
+align-content: center
+link:
+
+-- ftd.image:
+src: $assets.files.assets.pbs-1.png
+width.fixed.px: 280
+
+-- ftd.text: Integrating built form with nature
+role: $poppins-size-30-600
+margin-top.px: 15
+
+-- end: ftd.column
 
 
 
+-- ftd.column:
+align-content: center
+link:
+
+-- ftd.image:
+src: $assets.files.assets.pbs-2.png
+width.fixed.px: 280
+
+-- ftd.text: Act of viewing
+role: $poppins-size-16-400
+margin-top.px: 15
+
+-- ftd.text: Domus India Magazine (Mar 2018)
+role: $poppins-size-14-400
+
+-- end: ftd.column
 
 
 
+-- ftd.column:
+align-content: center
+link:
+
+-- ftd.image:
+src: $assets.files.assets.pbs-3.png
+width.fixed.px: 310
+
+-- ftd.text: The city, through a different lens
+role: $poppins-size-16-400
+margin-top.px: 15
+
+-- end: ftd.column
+
+
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 
 
@@ -96,20 +215,7 @@ height: auto
 
 
 
-
-
 ;; next section............................................................................................................................................
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -283,3 +389,40 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-70-700:
 desktop: $poppins-size-70-700-desktop
 mobile: $poppins-size-70-700-mobile
+
+
+
+
+
+
+-- ftd.type poppins-size-16-400-desktop:
+size.px: 16
+weight: 500
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-16-400-mobile:
+size.px: 16
+weight: 500
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-16-400:
+desktop: $poppins-size-16-400-desktop
+mobile: $poppins-size-16-400-mobile
+
+
+
+
+
+-- ftd.type poppins-size-14-400-desktop:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-14-400-mobile:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-14-400:
+desktop: $poppins-size-14-400-desktop
+mobile: $poppins-size-14-400-mobile
