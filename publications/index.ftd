@@ -1,5 +1,5 @@
 -- import: sarvom.github.io/poppins/assets as poppins-assets
--- import: shaheen-senpai.github.io/threeflaneurs/who-we-are/who-we-are as wwa
+-- import: shaheen-senpai.github.io/threeflaneurs/publications/publications as pbs
 -- import: shaheen-senpai.github.io/threeflaneurs/home
 
 -- page:
@@ -53,7 +53,10 @@ height: auto
 
 
 
--- wwa.hero-1:
+
+
+
+
 
 
 
@@ -61,41 +64,13 @@ height: auto
 
 
 
--- ftd.column:
-width: fill-container
-padding-horizontal.px: 250
-padding-top.px: 80 
-spacing.fixed.px: 50
-
--- ftd.text: FOUNDERS
-role: $poppins-size-55-700
-color: #000
-padding-bottom.px: 10 
-
-
--- wwa.blog-1: Ekta Idnany
-job: Partner and Program Manager (India Arch Open)
-photo: $assets.files.assets.Ekta-img.webp
-
-    Ekta is an architect, writer and a culture enthusiast. She has been teaching architecture and design for the past ten years now at various institutions such as KRVIA, BSSA, ISDI as well as being invited as a guest critic at other schools in Mumbai. She has also been running her own design practice in Mumbai, while writing for several magazines such as Architecture: Time Space People, Indian Architect and Builder and Domus. Her design ideology is centered around adding value to the lives of users. Ekta strongly believes that traveling gives her a better understanding of differences and similarities of human nature across different cultures and that makes her a better designer and writer. She is currently enrolled in CEPT University, trying to earn her PhD.
-
-
--- wwa.blog-1: Sahil Latheef
-job: Partner and Program Manager (ThreeFlaneurs Design Trips)
-photo: $assets.files.assets.Sahil-img.webp
-
-    Sahil is an avid traveller, aspiring naturalist and architect. He is a recipient of the prestigious Charles Correa Gold Medal for Design. Besides designing buildings, he has a keen interest in urban art projects, archaeology and urban research. His work as an architect has taken him to various cities with extended stints in London, Singapore, Mumbai and Dubai. He has been part of several research initiatives and over the past ten years Sahil has also been passionately involved with architectural pedagogy at various design institutes in Mumbai and Dubai as visiting design tutor, critic and lecturer. Sahil has also led multiple architecture field trips to various cities in Europe, Middle East, South Asia and the Far East (both as a design tutor and an independent design+travel curator).
-
-
--- ftd.text: COLLABORATORS
-role: $poppins-size-55-700
-color: #000
-padding-bottom.px: 10 
 
 
 
 
--- end: ftd.column
+
+
+
 
 
 
@@ -161,7 +136,7 @@ width: fill-container
 height.fixed.px: 396
 align-content: top-center
 background.solid: #ffaa80
-id: JOIN_THE_FLANEURS_3
+id: JOIN_THE_FLANEURS_6
 
 -- ftd.desktop:
 -- ftd.text: JOIN THE FLANEURS
@@ -190,7 +165,7 @@ color: #fff
 -- ftd.row:
 width: fill-container
 margin-top.px: 320
-anchor.id: JOIN_THE_FLANEURS_3
+anchor.id: JOIN_THE_FLANEURS_6
 
 -- home.email-subscribe:
 
@@ -308,22 +283,3 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-70-700:
 desktop: $poppins-size-70-700-desktop
 mobile: $poppins-size-70-700-mobile
-
-
-
-
-
-
--- ftd.type poppins-size-55-700-desktop:
-size.px: 55
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-55-700-mobile:
-size.px: 35
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-55-700:
-desktop: $poppins-size-55-700-desktop
-mobile: $poppins-size-55-700-mobile

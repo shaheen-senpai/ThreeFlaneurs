@@ -17,27 +17,53 @@ background.solid:
 width: fill-container
 height: 
 
+;; page begins...............................................................
+
 
 
 -- ftd.column:
+if: { ftd.device == "desktop" }
 width: fill-container
 height.fixed.px: 61
 background.solid: #fff
 
--- lib.navbar:
+-- lib.navbar-desktop:
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- lib.navbar-mobile:
+
+-- lib.navbar-dropdown:
 
 -- end: ftd.column
+
+
+;; navbar ends...............................................................................
+
 
 
 -- ftd.column:
 width: fill-container
 height: auto
 
-;; page components
+;; page components......................................................................................
+
+
 
 -- wwd.hero-1:
 
-;; next section
+
+
+;; next section...................................................................................
+
+
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
 
 -- wwd.heading:
 head: PROGRAMS &
@@ -46,11 +72,31 @@ margin-top: 110
 margin-left: 250
 height: 320
 
+-- end: ftd.column
 
-;; next section
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- wwd.heading:
+head: PROGRAMS &
+sub: PROJECTS
+margin-top: 30
+margin-left: 25
+height: 160
+
+-- end: ftd.column
+
+
+
+
+;; next section...............................................................................................
+
+
 
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 width: fill-container
 height.fixed.px: 620
 spacing: space-between
@@ -63,7 +109,8 @@ button-text: Learn More...
 button-link: https://www.threeflaneurs.com/trips
 
 
--- ftd.image: $assets.files.assets.wwd-iframe.webp
+-- ftd.image: 
+src: $assets.files.assets.wwd-iframe.webp
 height: fill-container
 ;; iframe to be added here
 
@@ -78,8 +125,48 @@ button-link: https://www.threeflaneurs.com/india-arch-open
 -- end: ftd.row
 
 
-;; next section
 
+-- ftd.column:
+width: fill-container
+if: { ftd.device == "mobile" }
+
+
+-- wwd.blog: DESIGN TRIPS
+bg-img: $assets.files.assets.wwd-blog-1.webp
+heading-color:  #f1562a
+body: We conduct curated design tours to various cities around the world so as to foster an interesting discussion about the state of architecture and design in our cities.
+button-text: Learn More...
+button-link: https://www.threeflaneurs.com/trips
+
+
+-- ftd.image: 
+src: $assets.files.assets.wwd-iframe.webp
+width: fill-container
+;; iframe to be added here
+
+
+-- wwd.blog: INDIA ARCH OPEN
+bg-img: $assets.files.assets.wwd-blog-2.webp
+heading-color:  #9bd22d
+body: We have hosted open house format public design events in multiple cities across India - under the banner 'India Arch Open'. Participants have signed up to visit over 45 private projects and meet the designers.
+button-text: Learn More...
+button-link: https://www.threeflaneurs.com/india-arch-open
+
+
+-- end: ftd.column
+
+
+
+
+
+;; next section............................................................................................................................................
+
+
+
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
 
 -- wwd.heading:
 head: CHECK OUR
@@ -88,38 +175,78 @@ margin-top: 30
 margin-left: 250
 height: 400
 
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- wwd.heading:
+head: CHECK OUR
+sub: GRAM
+margin-top: 30
+margin-left: 25
+height: 160
+
+-- end: ftd.column
 
 
-;; next section
+
+
+;; next section.................................................................................................................................................
 
 
 
 -- ftd.column:
 width: fill-container
-height.fixed.px: 320
+height.fixed.px: 396
 align-content: top-center
 background.solid: #ffaa80
+id: JOIN_THE_FLANEURS_2
 
+-- ftd.desktop:
 -- ftd.text: JOIN THE FLANEURS
 role: $poppins-size-70-700
 color: #fff
 margin-top.px: 50
+-- end: ftd.desktop
+
+-- ftd.mobile:
+-- ftd.text: JOIN THE
+role: $poppins-size-70-700
+color: #fff
+margin-top.px: 50
+-- end: ftd.mobile
+
+-- ftd.mobile:
+-- ftd.text: FLANEURS
+role: $poppins-size-70-700
+color: #fff
+-- end: ftd.mobile
 
 -- ftd.text:  Get the Latest News & Updates
 role: $poppins-size-30-600
 color: #fff
 
--- end: ftd.column
+-- ftd.row:
+width: fill-container
+margin-top.px: 320
+anchor.id: JOIN_THE_FLANEURS_2
 
 -- home.email-subscribe:
 
+-- end: ftd.row
+
+-- end: ftd.column
 
 
-;; next component
+
+;; next component................................................................................................................
 
 
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 width: fill-container
 height.fixed.calc: 100vh - 61px
 background.solid: #fff
@@ -127,12 +254,29 @@ background.solid: #fff
 -- home.contact-1:
 
 -- home.contact-2:
-to-top: what-we-do#wwd-hero
+to-top: index.html#hero-1
 
 -- end: ftd.row
 
+;; mobile view ..............................
 
-;; end of this page
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #fff
+
+
+-- home.contact-1:
+padding: 15
+
+-- home.contact-2:
+padding: 15
+to-top: index.html#hero-1
+
+-- end: ftd.column
+
+
+;; end of page.................................................................................
 
 
 -- end: ftd.column
@@ -179,7 +323,7 @@ weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-30-600-mobile:
-size.px: 30
+size.px: 20
 weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
@@ -198,7 +342,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-70-700-mobile:
-size.px: 70
+size.px: 50
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
