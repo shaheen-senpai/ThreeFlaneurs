@@ -61,7 +61,22 @@ height: auto
 
 
 
+-- ftd.column:
+width: fill-container
+padding-horizontal.px if { ftd.device == "desktop" }: 200
+padding-vertical.px: 40
+align-content: center
+spacing.fixed.px: 30
 
+
+-- 3fj.blog: Reflections: Delirious New York: A Retroactive Manifesto for Manhattan (1978) by Rem...
+author: Ekta Idnany
+date: Jul 5, 2021
+cover: $assets.files.assets.journal-1.webp
+
+    The author is an architect and the self-confessed ‘ghostwriter’ of the retroactive manifesto of Manhattan. The book is not only a...
+
+-- end: ftd.column
 
 
 
