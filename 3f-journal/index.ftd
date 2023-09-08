@@ -63,7 +63,8 @@ height: auto
 
 -- ftd.column:
 width: fill-container
-padding-horizontal.px if { ftd.device == "desktop" }: 200
+padding-horizontal.px if { ftd.device == "desktop" }: 220
+padding-horizontal.px if { ftd.device == "mobile" }: 15
 padding-vertical.px: 40
 align-content: center
 spacing.fixed.px: 30
