@@ -63,9 +63,10 @@ height: auto
 
 -- ftd.column:
 width: fill-container
-padding-horizontal.px: 250
-padding-top.px: 80 
-spacing.fixed.px: 50
+padding-horizontal.px if { ftd.device == "desktop" }: 250
+padding-horizontal.px if { ftd.device == "mobile" }: 25
+padding-vertical.px: 80 
+spacing.fixed.px: 40
 
 -- ftd.text: FOUNDERS
 role: $poppins-size-55-700
@@ -92,8 +93,32 @@ role: $poppins-size-55-700
 color: #000
 padding-bottom.px: 10 
 
+-- wwa.name-tags: Amrita Ravimohan
+job: India Arch Open and Blog Contributor
+
+-- wwa.name-tags: Neha Idnany
+job: Financial Advisor
 
 
+-- ftd.text: CO-FLANEURS
+role: $poppins-size-55-700
+color: #000
+padding-bottom.px: 10 
+
+-- wwa.name-tags: Juhi Bafna
+job: Mumbai Arch Open
+
+-- wwa.name-tags: Naimun Khan
+job: Bengaluru Arch Open
+
+-- wwa.name-tags: Soumya Gupta
+job: Delhi Arch Open
+
+-- wwa.name-tags: Neha Harish
+job: Bengaluru Arch Open
+
+-- wwa.name-tags: Zeba Maria Haris
+job: Kozhikode Arch Open
 
 -- end: ftd.column
 

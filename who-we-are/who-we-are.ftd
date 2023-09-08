@@ -84,9 +84,7 @@ width: fill-container
 if: { ftd.device == "desktop" }
 width: fill-container
 height: hug-content
-
-
-
+padding-bottom.px: 50
 
 -- ftd.column:
 spacing.fixed.px: 5
@@ -104,26 +102,41 @@ color: #000
 role: $poppins-size-14-400
 color: #000
 
+
 -- ftd.row:
+margin-top.px: 20
+align-content: center
+spacing.fixed.px: 10
 
+-- ftd.image:
+src: $assets.files.assets.mail.svg
+width.fixed.px: 20
+link:
 
-;; socials
+-- ftd.image:
+src: $assets.files.assets.instagram.svg
+width.fixed.px: 20
+link:
+
+-- ftd.image:
+src: $assets.files.assets.facebook.svg
+width.fixed.px: 20
+link:
+
+-- ftd.image:
+src: $assets.files.assets.linkedin.svg
+width.fixed.px: 20
+link:
 
 -- end: ftd.row
 
 
 -- end: ftd.column
 
-
-
-
 -- ftd.image:
 src: $blog-1.photo
 width.fixed.px: 220
 align-self: center
-
-
-
 
 -- end: ftd.row
 
@@ -133,13 +146,64 @@ align-self: center
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
+width: fill-container
+height: hug-content
+padding-bottom.px: 50
+
+-- ftd.text: $blog-1.name
+role: $poppins-size-30-600
+color: #f1562a
+
+-- ftd.text: $blog-1.job
+role: $poppins-size-16-400
+color: #000
+padding-right.percent: 20
+
+-- ftd.image:
+src: $blog-1.photo
+width.fixed.px: 200
+align-self: center
+margin.px: 20
 
 
 
+-- ftd.row:
+margin-bottom.px: 20
+align-content: center
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.assets.mail.svg
+width.fixed.px: 20
+link:
+
+-- ftd.image:
+src: $assets.files.assets.instagram.svg
+width.fixed.px: 20
+link:
+
+-- ftd.image:
+src: $assets.files.assets.facebook.svg
+width.fixed.px: 20
+link:
+
+-- ftd.image:
+src: $assets.files.assets.linkedin.svg
+width.fixed.px: 20
+link:
+
+-- end: ftd.row
+
+
+
+-- ftd.text: $blog-1.content
+role: $poppins-size-14-400
+color: #000
 
 
 
 -- end: ftd.column
+
 
 -- end: ftd.column
 
@@ -155,14 +219,23 @@ if: { ftd.device == "mobile" }
 
 
 
+-- component name-tags:
+caption name:
+string job:
 
+-- ftd.column:
 
+-- ftd.text: $name-tags.name    
+role: $poppins-size-30-600
+color: #f1562a
 
+-- ftd.text: $name-tags.job
+role: $poppins-size-16-400
+color: #000
 
+-- end: ftd.column
 
-
-
-
+-- end: name-tags
 
 
 
@@ -308,7 +381,7 @@ font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-16-400-mobile:
 size.px: 16
-weight: 400
+weight: 600
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.responsive-type poppins-size-16-400:
