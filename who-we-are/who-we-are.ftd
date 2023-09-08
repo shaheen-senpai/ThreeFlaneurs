@@ -296,27 +296,6 @@ mobile: $poppins-size-20-700-mobile
 
 
 
-
--- ftd.type poppins-size-50-600-desktop:
-size.px: 50
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-50-600-mobile:
-size.px: 35
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-50-600:
-desktop: $poppins-size-50-600-desktop
-mobile: $poppins-size-50-600-mobile
-
-
-
-
-
-
-
 -- ftd.type poppins-size-14-400-desktop:
 size.px: 14
 weight: 400
@@ -330,26 +309,6 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-14-400:
 desktop: $poppins-size-14-400-desktop
 mobile: $poppins-size-14-400-mobile
-
-
-
-
-
-
-
--- ftd.type poppins-size-34-600-desktop:
-size.px: 34
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-34-600-mobile:
-size.px: 34
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-34-600:
-desktop: $poppins-size-34-600-desktop
-mobile: $poppins-size-34-600-mobile
 
 
 
@@ -387,45 +346,3 @@ font-family: $poppins-assets.fonts.Poppins
 -- ftd.responsive-type poppins-size-16-400:
 desktop: $poppins-size-16-400-desktop
 mobile: $poppins-size-16-400-mobile
-
-
-
-
-
-
-
--- ftd.type poppins-size-55-700-desktop:
-size.px: 55
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-55-700-mobile:
-size.px: 35
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-55-700:
-desktop: $poppins-size-55-700-desktop
-mobile: $poppins-size-55-700-mobile
-
-
-
-
-
-
-
-
-
--- ftd.type poppins-size-45-700-desktop:
-size.px: 45
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-45-700-mobile:
-size.px: 35
-weight: 700
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-45-700:
-desktop: $poppins-size-45-700-desktop
-mobile: $poppins-size-45-700-mobile

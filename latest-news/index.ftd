@@ -1,5 +1,5 @@
 -- import: sarvom.github.io/poppins/assets as poppins-assets
--- import: shaheen-senpai.github.io/threeflaneurs/latest-news/latest-news as ls
+-- import: shaheen-senpai.github.io/threeflaneurs/latest-news/latest-news as lsn
 -- import: shaheen-senpai.github.io/threeflaneurs/home
 
 -- page:
@@ -53,10 +53,7 @@ height: auto
 
 
 
-
-
-
-
+-- lsn.hero-1:
 
 
 
@@ -64,15 +61,72 @@ height: auto
 
 
 
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+padding-horizontal.px: 200
+padding-vertical.px: 40
+align-content: center
+spacing.fixed.px: 30
 
+-- lsn.news-blog: Emirates Arch Open '20
+cover: $assets.files.assets.news-blog-1.webp
 
+-- lsn.news-blog: Webinar on Design Travel
+cover: $assets.files.assets.news-blog-2.webp
 
+-- lsn.news-blog: Landscape Design, People and Places
+cover: $assets.files.assets.news-blog-3.webp
 
+-- end: ftd.row
 
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+padding-horizontal.px: 200
+padding-bottom.px: 40
+align-content: center
+spacing.fixed.px: 30
 
+-- lsn.news-blog: Kozhikode Arch Open '20
+cover: $assets.files.assets.news-blog-4.webp
 
+-- lsn.news-blog: People, Architecture and Public Space in India
+cover: $assets.files.assets.news-blog-5.webp
 
+-- lsn.news-blog: Mumbai Arch Open '20
+cover: $assets.files.assets.news-blog-6.webp
 
+-- end: ftd.row
+
+;; mobile view..........................................
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+padding-horizontal.px: 25
+padding-vertical.px: 25
+spacing.fixed.px: 30
+
+-- lsn.news-blog: Emirates Arch Open '20
+cover: $assets.files.assets.news-blog-1.webp
+
+-- lsn.news-blog: Webinar on Design Travel
+cover: $assets.files.assets.news-blog-2.webp
+
+-- lsn.news-blog: Landscape Design, People and Places
+cover: $assets.files.assets.news-blog-3.webp
+
+-- lsn.news-blog: Kozhikode Arch Open '20
+cover: $assets.files.assets.news-blog-4.webp
+
+-- lsn.news-blog: People, Architecture and Public Space in India
+cover: $assets.files.assets.news-blog-5.webp
+
+-- lsn.news-blog: Mumbai Arch Open '20
+cover: $assets.files.assets.news-blog-6.webp
+
+-- end: ftd.column
 
 
 
@@ -93,22 +147,7 @@ height: auto
 
 
 
-
-
-
-
-
 ;; next section............................................................................................................................................
-
-
-
-
-
-
-
-
-
-
 
 
 
