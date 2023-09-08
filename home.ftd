@@ -772,7 +772,8 @@ border-top-width.px: 1
 border-color: #bfbfbf
 ;; align-content: center
 
--- ftd.image: $assets.files.assets.eye.svg
+-- ftd.image: 
+src: $assets.files.assets.eye.svg
 height.fixed.px: 25
 
 -- ftd.text: 1.2k
@@ -781,7 +782,8 @@ color: #000
 margin-left.px: 10
 align-self: center
 
--- ftd.image: $assets.files.assets.comment.svg
+-- ftd.image: 
+src: $assets.files.assets.comment.svg
 height.fixed.px: 25
 margin-left.px: 20
 
@@ -797,14 +799,16 @@ color: #000
 margin-left.px: 110
 align-self: center
 
--- ftd.image: $assets.files.assets.heart-empty.svg
+-- ftd.image: 
+src: $assets.files.assets.heart-empty.svg
 if: { !news-blog.click-heart }
 height.fixed.px: 20
 align-self: center
 margin-left.px: 5
 $on-click$: $ftd.set-bool($a = $news-blog.click-heart, v = true)
 
--- ftd.image: $assets.files.assets.heart-full.svg
+-- ftd.image: 
+src: $assets.files.assets.heart-full.svg
 if: { news-blog.click-heart }
 height.fixed.px: 20
 align-self: center

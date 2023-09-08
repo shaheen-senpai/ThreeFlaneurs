@@ -1,0 +1,358 @@
+-- import: sarvom.github.io/poppins/assets as poppins-assets
+
+
+
+-- component hero-1:
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+background.image: $bg-img
+id: wwa-hero
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+margin-top.px if { ftd.device == "desktop" }: 100
+margin-top.px if { ftd.device == "mobile" }: 25
+margin-left.px if { ftd.device == "desktop" }: 120
+margin-left.px if { ftd.device == "mobile" }: 15
+;;spacing.fixed.px: 20
+
+
+-- ftd.text: WHAT WE DO
+role: $poppins-size-20-700
+color: #9bd22d
+background.solid: #9bd22d
+
+
+-- ftd.text: WHO
+role: $poppins-size-90-700
+color: #fff
+
+-- ftd.text: WE ARE
+role: $poppins-size-90-700
+color: #9bd22d
+margin-top.px if { ftd.device == "desktop" }: 120
+margin-top.px if { ftd.device == "mobile" }: 60
+anchor.id: wwa-hero 
+
+
+-- ftd.text: ThreeFlaneurs is a design collective that works at the intersection of Architecture & Travel. Our main goal is to inspire people to travel with the objective of learning from well-designed environments.
+role: $poppins-size-14-400
+color: #fff   
+margin-top.px if { ftd.device == "desktop" }: 120
+margin-top.px if { ftd.device == "mobile" }: 40
+margin-right.px if { ftd.device == "desktop" }: 950
+margin-right.px if { ftd.device == "mobile" }: 50
+
+-- ftd.text: As architects with extensive experience in teaching, journalism and having travelled widely around the world in search of exemplary architecture, we initiated a few programs under the banner of ThreeFlaneurs to enable others to join us on this journey and learn along with us.
+role: $poppins-size-14-400
+color: #fff   
+margin-top.px: 12
+margin-right.px if { ftd.device == "desktop" }: 950
+margin-right.px if { ftd.device == "mobile" }: 50
+margin-bottom.px: 40
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-1
+
+
+
+
+
+
+
+
+
+
+-- component blog-1:
+caption name:
+body content:
+string job:
+ftd.image-src photo:
+
+
+-- ftd.column:
+width: fill-container
+
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+
+
+
+-- ftd.column:
+spacing.fixed.px: 5
+padding-right.px: 30
+
+-- ftd.text: $blog-1.name
+role: $poppins-size-30-600
+color: #f1562a
+
+-- ftd.text: $blog-1.job
+role: $poppins-size-16-400
+color: #000
+
+-- ftd.text: $blog-1.content
+role: $poppins-size-14-400
+color: #000
+
+-- ftd.row:
+
+
+;; socials
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+
+
+
+-- ftd.image:
+src: $blog-1.photo
+width.fixed.px: 220
+align-self: center
+
+
+
+
+-- end: ftd.row
+
+
+;; mobile view ...................................................................................................
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+
+
+
+
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: blog-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.background-image bg-img:
+src: $assets.files.assets.wwa-background.webp
+repeat: no-repeat
+position: center-center
+size: cover
+
+
+
+
+
+-- ftd.type poppins-size-90-700-desktop:
+size.px: 90
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-90-700-mobile:
+size.px: 40
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-90-700:
+desktop: $poppins-size-90-700-desktop
+mobile: $poppins-size-90-700-mobile
+
+
+
+
+
+-- ftd.type poppins-size-20-700-desktop:
+size.px: 20
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-20-700-mobile:
+size.px: 15
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-20-700:
+desktop: $poppins-size-20-700-desktop
+mobile: $poppins-size-20-700-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-50-600-desktop:
+size.px: 50
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-50-600-mobile:
+size.px: 35
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-50-600:
+desktop: $poppins-size-50-600-desktop
+mobile: $poppins-size-50-600-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-14-400-desktop:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-14-400-mobile:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-14-400:
+desktop: $poppins-size-14-400-desktop
+mobile: $poppins-size-14-400-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-34-600-desktop:
+size.px: 34
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-34-600-mobile:
+size.px: 34
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-34-600:
+desktop: $poppins-size-34-600-desktop
+mobile: $poppins-size-34-600-mobile
+
+
+
+
+
+
+-- ftd.type poppins-size-30-600-desktop:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-30-600-mobile:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-30-600:
+desktop: $poppins-size-30-600-desktop
+mobile: $poppins-size-30-600-mobile
+
+
+
+
+
+-- ftd.type poppins-size-16-400-desktop:
+size.px: 16
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-16-400-mobile:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-16-400:
+desktop: $poppins-size-16-400-desktop
+mobile: $poppins-size-16-400-mobile
+
+
+
+
+
+
+
+-- ftd.type poppins-size-55-700-desktop:
+size.px: 55
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-55-700-mobile:
+size.px: 35
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-55-700:
+desktop: $poppins-size-55-700-desktop
+mobile: $poppins-size-55-700-mobile
+
+
+
+
+
+
+
+
+
+-- ftd.type poppins-size-45-700-desktop:
+size.px: 45
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-45-700-mobile:
+size.px: 35
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-45-700:
+desktop: $poppins-size-45-700-desktop
+mobile: $poppins-size-45-700-mobile

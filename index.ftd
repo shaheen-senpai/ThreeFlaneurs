@@ -27,7 +27,7 @@ width: fill-container
 height.fixed.px: 61
 background.solid: #fff
 
--- lib.navbar:
+-- lib.navbar-desktop:
 -- end: ftd.column
 
 -- ftd.column:

@@ -1,0 +1,285 @@
+-- import: sarvom.github.io/poppins/assets as poppins-assets
+-- import: shaheen-senpai.github.io/threeflaneurs/publications/publications as pbs
+-- import: shaheen-senpai.github.io/threeflaneurs/home
+
+-- page:
+
+-- component page:
+
+-- ftd.column:
+width: fill-container
+height: 
+types: 
+colors: 
+background.solid: 
+
+-- ftd.column:
+width: fill-container
+height: 
+
+;; page begins...............................................................
+
+
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height.fixed.px: 61
+background.solid: #fff
+
+-- lib.navbar-desktop:
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- lib.navbar-mobile:
+
+-- lib.navbar-dropdown:
+
+-- end: ftd.column
+
+
+;; navbar ends...............................................................................
+
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+
+;; page components......................................................................................
+
+
+
+
+
+
+
+
+
+
+;; next section..........................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; next section...............................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; next section............................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; next section.................................................................................................................................................
+
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 396
+align-content: top-center
+background.solid: #ffaa80
+id: JOIN_THE_FLANEURS_6
+
+-- ftd.desktop:
+-- ftd.text: JOIN THE FLANEURS
+role: $poppins-size-70-700
+color: #fff
+margin-top.px: 50
+-- end: ftd.desktop
+
+-- ftd.mobile:
+-- ftd.text: JOIN THE
+role: $poppins-size-70-700
+color: #fff
+margin-top.px: 50
+-- end: ftd.mobile
+
+-- ftd.mobile:
+-- ftd.text: FLANEURS
+role: $poppins-size-70-700
+color: #fff
+-- end: ftd.mobile
+
+-- ftd.text:  Get the Latest News & Updates
+role: $poppins-size-30-600
+color: #fff
+
+-- ftd.row:
+width: fill-container
+margin-top.px: 320
+anchor.id: JOIN_THE_FLANEURS_6
+
+-- home.email-subscribe:
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+
+;; next component................................................................................................................
+
+
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+height.fixed.calc: 100vh - 61px
+background.solid: #fff
+
+-- home.contact-1:
+
+-- home.contact-2:
+to-top: index.html#hero-1
+
+-- end: ftd.row
+
+;; mobile view ..............................
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #fff
+
+
+-- home.contact-1:
+padding: 15
+
+-- home.contact-2:
+padding: 15
+to-top: index.html#hero-1
+
+-- end: ftd.column
+
+
+;; end of page.................................................................................
+
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type poppins-size-30-600-desktop:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-30-600-mobile:
+size.px: 20
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-30-600:
+desktop: $poppins-size-30-600-desktop
+mobile: $poppins-size-30-600-mobile
+
+
+
+
+
+
+-- ftd.type poppins-size-70-700-desktop:
+size.px: 70
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-70-700-mobile:
+size.px: 50
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-70-700:
+desktop: $poppins-size-70-700-desktop
+mobile: $poppins-size-70-700-mobile

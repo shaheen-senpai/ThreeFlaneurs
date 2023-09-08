@@ -1,6 +1,7 @@
 -- import: sarvom.github.io/poppins/assets as poppins-assets
 
 
+
 -- component hero-1:
 
 -- ftd.column:
@@ -12,8 +13,10 @@ id: wwd-hero
 -- ftd.column:
 width: hug-content
 height: hug-content
-margin-top.px: 100
-margin-left.px: 120
+margin-top.px if { ftd.device == "desktop" }: 100
+margin-top.px if { ftd.device == "mobile" }: 25
+margin-left.px if { ftd.device == "desktop" }: 120
+margin-left.px if { ftd.device == "mobile" }: 15
 ;;spacing.fixed.px: 20
 
 
@@ -30,21 +33,25 @@ color: #fff
 -- ftd.text: WE DO
 role: $poppins-size-90-700
 color: #f1562a
-margin-top.px: 120
+margin-top.px if { ftd.device == "desktop" }: 120
+margin-top.px if { ftd.device == "mobile" }: 60
 anchor.id: wwd-hero 
 
 
 -- ftd.text: At ThreeFlaneurs, we have been running programs at the intersection of architecture and travel across various verticals. In all our programs our participants get to engage with architecture and designers at different destinations:
 role: $poppins-size-14-400
 color: #fff   
-margin-top.px: 120
-margin-right.px: 950
+margin-top.px if { ftd.device == "desktop" }: 120
+margin-top.px if { ftd.device == "mobile" }: 40
+margin-right.px if { ftd.device == "desktop" }: 950
+margin-right.px if { ftd.device == "mobile" }: 50
 
 -- ftd.text: We have participated in the Kalaghoda Arts Festival Architecture and Urban Design Symposiums
 role: $poppins-size-14-400
 color: #fff   
 margin-top.px: 12
-margin-right.px: 950
+margin-right.px if { ftd.device == "desktop" }: 950
+margin-right.px if { ftd.device == "mobile" }: 50
 margin-bottom.px: 40
 
 -- end: ftd.column
@@ -115,8 +122,8 @@ boolean $hover: false
 
 
 -- ftd.column:
-width.fixed.px: 510
-height.fixed.px: 620
+width.fixed.px if {ftd.device == "desktop"}: 510
+height.fixed.px if {ftd.device == "desktop"}: 620
 id: wwd-blog
 
 -- ftd.image:
@@ -127,13 +134,15 @@ src: $blog.bg-img
 -- ftd.column:
 width: fill-container
 height: fill-container
-padding-horizontal.px: 55
+padding-horizontal.px if {ftd.device == "desktop"}: 55
+padding-horizontal.px if {ftd.device == "mobile"}: 35
 anchor.id: wwd-blog
+padding-vertical.px if {ftd.device == "mobile"}: 100
 
 -- ftd.text: $blog.head
 role: $poppins-size-45-700  
 color:  $blog.heading-color
-margin-top.px: 260
+margin-top.px if {ftd.device == "desktop"}: 260
 
 -- ftd.text: $blog.body
 role: $poppins-size-14-400
@@ -191,8 +200,8 @@ link: $blog.button-link
 -- ftd.background-image bg-img:
 src: $assets.files.assets.wwd-background.webp
 repeat: no-repeat
-position: 
-size: contain
+position: center-center
+size: cover
 
 
 
@@ -204,7 +213,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-90-700-mobile:
-size.px: 90
+size.px: 40
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
@@ -222,34 +231,13 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-20-700-mobile:
-size.px: 20
+size.px: 15
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.responsive-type poppins-size-20-700:
 desktop: $poppins-size-20-700-desktop
 mobile: $poppins-size-20-700-mobile
-
-
-
-
-
-
-
--- ftd.type poppins-size-50-600-desktop:
-size.px: 50
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-50-600-mobile:
-size.px: 50
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-50-600:
-desktop: $poppins-size-50-600-desktop
-mobile: $poppins-size-50-600-mobile
-
 
 
 
@@ -270,44 +258,6 @@ font-family: $poppins-assets.fonts.Poppins
 desktop: $poppins-size-14-400-desktop
 mobile: $poppins-size-14-400-mobile
 
-
-
-
-
-
-
--- ftd.type poppins-size-34-600-desktop:
-size.px: 34
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-34-600-mobile:
-size.px: 34
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-34-600:
-desktop: $poppins-size-34-600-desktop
-mobile: $poppins-size-34-600-mobile
-
-
-
-
-
-
--- ftd.type poppins-size-30-600-desktop:
-size.px: 30
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.type poppins-size-30-600-mobile:
-size.px: 30
-weight: 600
-font-family: $poppins-assets.fonts.Poppins
-
--- ftd.responsive-type poppins-size-30-600:
-desktop: $poppins-size-30-600-desktop
-mobile: $poppins-size-30-600-mobile
 
 
 
@@ -339,7 +289,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-55-700-mobile:
-size.px: 55
+size.px: 35
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
@@ -361,7 +311,7 @@ weight: 700
 font-family: $poppins-assets.fonts.Poppins
 
 -- ftd.type poppins-size-45-700-mobile:
-size.px: 45
+size.px: 35
 weight: 700
 font-family: $poppins-assets.fonts.Poppins
 

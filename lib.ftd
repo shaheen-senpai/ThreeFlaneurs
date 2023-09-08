@@ -1,7 +1,7 @@
 -- import: sarvom.github.io/poppins/assets as poppins-assets
 
 
--- component navbar:
+-- component navbar-desktop:
 boolean $hover-home: false
 boolean $hover-contact: false
 
@@ -17,9 +17,9 @@ sticky: true
 -- ftd.text: HOME
 role: $poppins-size-17-600
 color: #001
-color if {navbar.hover-home}: #e84a43
-$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
+color if {navbar-desktop.hover-home}: #e84a43
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.hover-home, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.hover-home, v = false)
 align-self: center
 padding-left.px: 120
 padding-right.px: 60
@@ -54,9 +54,9 @@ bg-color: #ffff66
 -- ftd.text: CONTACT
 role: $poppins-size-17-600
 color: #000
-color if {navbar.hover-contact}: #e84a43
-$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-contact, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-contact, v = false)
+color if {navbar-desktop.hover-contact}: #e84a43
+$on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.hover-contact, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.hover-contact, v = false)
 align-self: center
 padding-right.px: 120
 padding-left.px: 60
@@ -65,7 +65,7 @@ link: index.html#contact-1
 
 -- end: ftd.row
 
--- end: navbar
+-- end: navbar-desktop
 
 
 
@@ -102,9 +102,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $navbar-mobile.hover-home, v = false)
 align-self: center
 link: index.html
 
--- ftd.image: $assets.files.assets.hamburger-menu.svg
+-- ftd.image: 
+src: $assets.files.assets.hamburger-menu.svg
 height.fixed.px: 30
-padding-left.percent: 80
+margin-left.percent: 80
 anchor.id: navbar-mobile
 $on-click$: $ftd.set-bool($a = $menu-open, v = true)
 
@@ -208,7 +209,8 @@ link: /publications
 -- end: ftd.column
 
 
--- ftd.image: $assets.files.assets.cross.svg
+-- ftd.image: 
+src: $assets.files.assets.cross.svg
 height.fixed.px: 30
 margin-top.px: 30
 margin-right.px: 15
