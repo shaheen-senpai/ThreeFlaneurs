@@ -344,7 +344,7 @@ color if {hero-news.hover}: #fff
 background.solid if {hero-news.hover}: #000
 $on-mouse-enter$: $ftd.set-bool($a = $hero-news.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-news.hover, v = false)
-link: /threeflaneurs/latest-news
+link: /ThreeFlaneurs/latest-news
 
 
 -- end: ftd.column
@@ -393,7 +393,7 @@ role: $poppins-size-14-400
 color: #000
 padding-horizontal.px: 50
 color if {email-subscribe.hover}: #fff
-link: /threeflaneurs/latest-news
+link: /ThreeFlaneurs/latest-news
 
 -- end: ftd.row
 
