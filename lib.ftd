@@ -1,5 +1,5 @@
 -- import: sarvom.github.io/poppins/assets as poppins-assets
-
+-- import: fastn/processors as pr
 
 -- component navbar-desktop:
 boolean $hover-home: false
