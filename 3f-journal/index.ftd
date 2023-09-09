@@ -63,9 +63,10 @@ height: auto
 
 -- ftd.column:
 width: fill-container
+height: hug-content
 padding-horizontal.px if { ftd.device == "desktop" }: 220
 padding-horizontal.px if { ftd.device == "mobile" }: 15
-padding-vertical.px: 40
+padding-vertical.px: 60
 align-content: center
 spacing.fixed.px: 30
 
@@ -77,15 +78,78 @@ cover: $assets.files.assets.journal-1.webp
 
     The author is an architect and the self-confessed ‘ghostwriter’ of the retroactive manifesto of Manhattan. The book is not only a...
 
+
+-- 3fj.blog: Reflections: ‘City of Djinns: A Year in Delhi’ (1993) by William Dalrymple
+author: Ekta Idnany
+date: Jun 19, 2021
+cover: $assets.files.assets.journal-2.webp
+
+    Dalrymple is a Journalist and a Historian is a visitor to Delhi and the book is as much a chronicle of his year spent in the city as a...
+    
+
+-- 3fj.blog: Writings on Cities
+author: Ekta Idnany
+date: Jun 17, 2021
+cover: $assets.files.assets.journal-3.webp
+
+    Series Introduction: We hope this blog post finds you well. Though the tough times are continuing and it seems like there's still a long...
+
+
+-- 3fj.blog: Contemporary 'Local' Architecture in the Emirates
+author: Sahil Latheef
+date: Sep 3, 2020
+cover: $assets.files.assets.journal-4.webp
+
+    In this post we explore an exciting range of lesser known projects designed by local architects in the UAE.
+
+
+-- 3fj.blog: Bird’s-eye view of the Garland of Islands
+author: Sahil Latheef
+date: Dec 18, 2018
+cover: $assets.files.assets.journal-5.webp
+
+    Photostory from the island nation of Maldives.
+
+
+-- 3fj.blog: Serendipitous Architecture
+author: Ekta Idnany
+date: Dec 1, 2018
+cover: $assets.files.assets.journal-6.webp
+
+    Sri Lankan architecture is unique in its singular approach to the appropriation of nature.
+
+
+;; -- 3fj.blog: 
+;; author: 
+;; date: 
+;; cover: $assets.files.assets.journal-7.webp
+
+
+
+
+;; -- 3fj.blog: 
+;; author: 
+;; date: 
+;; cover: $assets.files.assets.journal-8.webp
+
+
+
+
+;; -- 3fj.blog: 
+;; author: 
+;; date: 
+;; cover: $assets.files.assets.journal-9.webp
+
+
+
+
+
+;; -- 3fj.blog: 
+;; author: 
+;; date: 
+;; cover: $assets.files.assets.journal-10.webp
+
 -- end: ftd.column
-
-
-
-
-
-
-
-
 
 
 

@@ -180,7 +180,7 @@ width: fill-container
 
 -- ftd.column:
 width: fill-container
-height: hug-content
+height.fixed.px: 360
 padding-horizontal.px: 15
 padding-top.px: 30
 border-left-width.px: 1
@@ -219,7 +219,7 @@ width.fixed.percent: 92
 padding-vertical.px: 15
 border-top-width.px: 1
 border-color: #bfbfbf
-margin-top.percent: 70
+margin-top.percent: 75
 anchor.id: 3fj-blog-mobile
 
 -- ftd.text: 0
