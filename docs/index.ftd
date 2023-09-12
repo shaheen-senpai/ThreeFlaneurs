@@ -1,0 +1,284 @@
+-- import: fastn-community.github.io/expand-ds as ds
+-- import: sarvom.github.io/poppins/assets as poppins-assets
+-- import: shaheen-senpai.github.io/threeflaneurs/home
+
+-- ds.page: ThreeFlaneurs Documentation
+
+-- ds.page.body:
+
+This document contains various components we have developed using `ftd`
+language.
+
+-- ds.h3: Navbar Component
+
+We have developed the `navbar` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height.fixed.px: 61
+background.solid: #fff
+
+\-- lib.navbar-desktop:
+\-- end: ftd.column
+
+\-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+\-- lib.navbar-mobile:
+
+\-- lib.navbar-dropdown:
+
+\-- end: ftd.column
+
+-- ds.rendered.output:
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height.fixed.px: 61
+background.solid: #fff
+
+-- lib.navbar-desktop:
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- lib.navbar-mobile:
+
+-- lib.navbar-dropdown:
+
+-- end: ftd.column
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+
+-- ds.h3: Hero Component
+
+We have developed the `hero` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.hero-1:
+
+-- ds.rendered.output:
+
+-- home.hero-1:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+-- ds.h3: A multi-funcitonal blog component
+
+We have developed a `blog` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.blog-1: WHAT WE DO .....
+color: #f1562a
+heading-margin: 100
+content-1: We have hosted (open house format) public design events in several cities across UAE & India under our **Architecture Open** initiatives.
+content-2: And also conducted **Curated Design Tours** to various cities around the world so as to foster a better understanding of the state of architecture and design in our contemporary cities.
+button: Learn More
+url: /what-we-do
+
+-- ds.rendered.output:
+
+-- home.blog-1: WHAT WE DO .....
+color: #f1562a
+content-padding: 15
+box-height: 400
+content-1: We have hosted (open house format) public design events in several cities across UAE & India under our **Architecture Open** initiatives.
+content-2: And also conducted **Curated Design Tours** to various cities around the world so as to foster a better understanding of the state of architecture and design in our contemporary cities.
+button: Learn More
+url: /what-we-do
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+-- ds.h3: Second blog Component
+
+We have developed another `blog` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.blog-2: Newsletters, Lectures, Symposia
+name-1: OUT
+name-2: REACH
+
+\-- home.blog-3: Member strong community
+name-1: 1500
+
+-- ds.rendered.output:
+
+-- home.blog-2: Newsletters, Lectures, Symposia
+name-1: OUT
+name-2: REACH
+
+-- home.blog-3: Member strong community
+name-1: 1500
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+-- ds.h3: News blog Component
+
+We have developed a `News-blog` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.hero-news:
+
+-- ds.rendered.output:
+
+-- home.hero-news:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+-- ds.h3: Email-Subscribe Component
+
+We have developed a `email-subscribe` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.email-subscribe:
+
+-- ds.rendered.output:
+
+-- home.email-subscribe:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+-- ds.h3: Contact-1 Component
+
+We have developed a `contact` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.contact-1:
+
+-- ds.rendered.output:
+
+-- home.contact-1:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+
+-- ds.h3: Contact-2 Component
+
+We have developed another`contact` component for ThreeFlaneurs website.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- home.contact-2:
+
+-- ds.rendered.output:
+
+-- home.contact-2:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type poppins-size-30-600-desktop:
+size.px: 30
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-30-600-mobile:
+size.px: 20
+weight: 600
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-30-600:
+desktop: $poppins-size-30-600-desktop
+mobile: $poppins-size-30-600-mobile
+
+
+
+
+
+
+-- ftd.type poppins-size-70-700-desktop:
+size.px: 70
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-70-700-mobile:
+size.px: 50
+weight: 700
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-70-700:
+desktop: $poppins-size-70-700-desktop
+mobile: $poppins-size-70-700-mobile

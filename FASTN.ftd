@@ -4,6 +4,7 @@
 favicon: /-/shaheen-senpai.github.io/threeflaneurs/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
+-- fastn.dependency: fastn-community.github.io/expand-ds
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: sarvom.github.io/poppins
